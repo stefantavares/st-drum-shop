@@ -24,7 +24,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--white-2);
+  background-color: var(--white);
   padding: 2vmin;
   height: 100vh;
 }
@@ -89,7 +89,7 @@ code {
 }
 
 p.error-message {
-  color: var(--orange);
+  color: var(--black);
   text-align: center;
 }
 
