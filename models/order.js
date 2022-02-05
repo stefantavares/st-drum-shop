@@ -15,4 +15,20 @@ const orderSchema = new Schema({
     isPaid: { type: Boolean, default: false },
 }, {
     timestamps: true
-})
+});
+
+orderSchema.virtual('orderTotal').get(function () {
+    return this.lineItems.reduce((total, item) => total + item.extPrice, 0);
+  });
+  
+orderSchema.virtual('totalQty').get(function () {
+    return this.lineItems.reduce((total, item) => total + item.qty, 0);
+});
+  
+orderSchema.virtual('orderId').get(function () {
+    return this.id.slice(-6).toUpperCase();
+});
+
+lineItemSchema.virtual('extPrice').get(function() {
+    return this.qty * this.item.price;
+});
