@@ -9,6 +9,7 @@ export default function MenuListItem({ menuItem }) {
         <span>${menuItem.price.toFixed(2)}</span>
         <button className="btn-sm" id="buy-button" onClick={() => console.log('clicked')}>
         <i class="far fa-cart-plus"></i>
+        <span id="add-to-cart">ADD TO CART</span>
         </button>
       </div>
     </div>

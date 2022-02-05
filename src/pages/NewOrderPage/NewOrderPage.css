@@ -1,7 +1,7 @@
 .NewOrderPage {
     height: 100%;
     display: grid;
-    grid-template-columns: 1.6fr 3.5fr 3fr;
+    grid-template-columns: 3.5fr 2fr;
     grid-template-rows: 1fr;
     background-color: var(--white);
   }
@@ -16,4 +16,10 @@
 
   #category-title {
       font-size: 1.8vw;
+  }
+
+  header {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid black;
   }

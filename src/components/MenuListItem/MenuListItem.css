@@ -34,8 +34,24 @@
   }
 
   #buy-button {
-      background-color: white;
-      color: black;
-      font-size: 2.4vw;
-      border: none;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3vh;
+    background-color: white;
+    color: black;
+    font-size: 2.4vw;
+    border: none;
+}
+
+#buy-button:hover {
+    border-right: 0.5vw solid rgb(3, 173, 3);
+    border-left: 0.5vw solid rgb(3, 173, 3);
+    border-radius: 0px;
+}
+
+#add-to-cart {
+    font-size: 1.1vw;
+    margin-top: 0.4vh;
+}

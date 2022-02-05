@@ -3,7 +3,7 @@
     /* border: .1vmin solid var(--black); */
     margin: 3vmin 0;
     padding: 3vmin;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
       /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
   }

@@ -13,6 +13,7 @@
     border: none;
     color: black;
     background-color: white;
+    font-size: 4vmin;
   }
   
   .OrderDetail .line-item-container {

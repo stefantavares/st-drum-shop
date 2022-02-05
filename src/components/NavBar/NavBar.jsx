@@ -17,7 +17,7 @@ function NavBar({ user, setUser }) {
           &nbsp; | &nbsp;
           <Link to="/orders/new">New Order</Link>
           &nbsp; | &nbsp;
-          Welcome <span id="nav-username">{user.name}</span>
+          Welcome &nbsp;<span id="nav-username">{user.name}</span>
           &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
       );

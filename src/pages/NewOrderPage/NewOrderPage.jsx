@@ -24,20 +24,24 @@ function NewOrderPage({ user, setUser }) {
   }, []);
 
   return (
-    <main className="NewOrderPage">
-      <aside>
-          <h5 id="category-title">Shop By Category:</h5>
+      <>
+      <header>
+        <div id="category-container">
+        <h5 id="category-title">Shop By Category</h5>
         <CategoryList
           categories={categoriesRef.current}
           activeCat={activeCat}
           setActiveCat={setActiveCat}
         />
-      </aside>
+        </div>
+      </header>
+    <main className="NewOrderPage">
       <MenuList
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
       />
       <OrderDetail />
     </main>
+    </>
   );
 }
 
