@@ -1,4 +1,3 @@
-// const { default: SignUpForm } = require("../components/SignUpForm/SignUpForm");
 import * as usersAPI from './users-api';
 
 export async function signUp(userData) {

@@ -32,3 +32,11 @@ orderSchema.virtual('orderId').get(function () {
 lineItemSchema.virtual('extPrice').get(function() {
     return this.qty * this.item.price;
 });
+
+orderSchema.statics.getCart = function (userId) {
+    return this.findOneAndUpdate(
+      { user: userId, isPaid: false },
+      { user: userId },
+      { upsert: true, new: true }
+    );
+  };

@@ -1,5 +1,5 @@
-// const Order = require('../../models/order');
-// const Item = require('../../models/item');
+const Order = require('../../models/order');
+const Item = require('../../models/item');
 
 module.exports = {
     cart,
@@ -9,7 +9,8 @@ module.exports = {
   };
   
   async function cart(req, res) {
-  
+    const cart = await Order.getCart(req.user._id);
+    res.json(cart);
   }
   
   async function addToCart(req, res) {
@@ -17,7 +18,7 @@ module.exports = {
   }
   
   async function setItemQtyInCart(req, res) {
-      
+
   }
   
   async function checkout(req, res) {
