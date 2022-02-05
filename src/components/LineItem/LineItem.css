@@ -1,32 +1,71 @@
 .LineItem {
     width: 100%;
     display: grid;
-    grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
+    grid-template-columns: 12vw 12.35vw 5.25vw;
     padding: 1.3vmin 0;
     color: var(--black);
     background-color: var(--white);
     border-top: .1vmin solid var(--black);
     font-size: 1.2vw;
-  }
+}
   
-  .LineItem:last-child {
+.LineItem:last-child {
     border-bottom: .1vmin solid black;
-  }
+}
   
-  .LineItem .qty {
+.LineItem .qty {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 1.3vw;
-  }
+}
   
-  .LineItem .ext-price {
+.LineItem .ext-price {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 1.3vw;
-  }
+}
   
-  .LineItem button {
+.LineItem button {
     margin: 0;
-  }
+}
+
+#item-name {
+    margin-bottom: .7vh;
+}
+
+#qty-plus {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.4vw;
+    margin-left: 1.7vw;;
+    padding: 0px;
+    margin-right: 3vw;
+}
+
+#qty-minus {
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 0px;
+    font-size: 1.4vw;
+    margin-right: 1.7vw;
+    padding: 0px;
+}
+
+#qty-plus:hover {
+    color: green;
+    font-size: 1.7vw;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+#qty-minus:hover {
+    color: red;
+    font-size: 1.7vw;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}

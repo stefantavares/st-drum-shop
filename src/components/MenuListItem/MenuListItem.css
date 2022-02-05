@@ -38,20 +38,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1.3vh 1.3vh 0vh 1.3vh;
+    margin: 2.5vh 1.3vh 0vh 1.3vh;
     background-color: white;
     color: black;
-    font-size: 2.4vw;
+    font-size: 1.8vw;
     border: none;
 }
 
 #buy-button:hover {
-    border-bottom: 0.5vw solid rgb(2, 148, 2);
+    border-bottom: 0.3vh solid rgb(2, 148, 2);
     /* border-left: 0.5vw solid rgb(3, 173, 3); */
     border-radius: 0px;
 }
 
 #add-to-cart {
-    font-size: 1.1vw;
+    font-size: .8vw;
     margin-top: 0.4vh;
 }

@@ -20,31 +20,40 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             <span>ORDER <span className="smaller">{order.orderId}</span></span>
             :
             <span>NEW ORDER</span>
-          }
+        }
           <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
         </div>
         <div className="line-item-container flex-ctr-ctr flex-col scroll-y">
           {lineItems.length ?
             <>
               {lineItems}
-              <section className="total">
+              <div className="total">
                 {order.isPaid ?
                   <span className="right">TOTAL&nbsp;&nbsp;</span>
                   :
-                  <button
-                    className="btn-sm"
-                    onClick={handleCheckout}
-                    disabled={!lineItems.length}
-                  >CHECKOUT</button>
+                  <div>
+                  <div className='total-container'>
+                      <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span>
+                    <span className="right">${order.orderTotal.toFixed(2)}</span>
+                    </div>
+                        <div className='checkout-container'>
+                            <button
+                            className="btn-sm" id='checkout-btn'
+                            onClick={handleCheckout}
+                            disabled={!lineItems.length}
+                            >CHECKOUT &nbsp;<i className="far fa-credit-card"></i></button>
+                        </div>
+                  </div>
                 }
                 {/* <span>{order.totalQty}</span> */}
-                <span className="right">${order.orderTotal.toFixed(2)}</span>
-              </section>
+                
+
+              </div>
             </>
             :
             <div className="hungry"><i className="far fa-cart-arrow-down"></i></div>
-          }
-        </div>
+        }
       </div>
+        </div>
     );
 }

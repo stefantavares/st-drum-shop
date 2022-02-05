@@ -5,9 +5,9 @@
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--black);
-  }
+}
   
-  .OrderDetail .section-heading {
+.OrderDetail .section-heading {
     width: 100%;
     border-radius: 0px;
     border: none;
@@ -15,45 +15,67 @@
     background-color: white;
     font-size: 2.1vmin;
     font-weight: 500;
-  }
+    margin-bottom: 4vh;
+}
   
-  .OrderDetail .line-item-container {
+.OrderDetail .line-item-container {
     margin-top: 3vmin;
     justify-content: flex-start;
     height: calc(100vh - 18vmin);
     width: 100%;
   }
   
-  .OrderDetail .total {
+.OrderDetail .total {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: 18.35vw 5.75vw 5.25vw; */
+    display: grid;
+    grid-template-columns: 18.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
     color: var(--black);
-    border-top: .1vmin solid var(--tan-3);
-  }
+    border-top: .1vmin solid var(--black);
+}
   
-  .OrderDetail .total span {
+.OrderDetail .total span {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5vw;
     color: var(--black);
-  }
+}
   
-  .OrderDetail .total span.right {
+.OrderDetail .total span.right {
     display: flex;
     justify-content: flex-end;
-  }
+}
   
-  .OrderDetail .hungry {
+.OrderDetail .hungry {
     position: absolute;
     top: 50vh;
     font-size: 2vmin;
-  }
+}
 
 .fa-cart-arrow-down {
     font-size: 5vh;
+}
+
+#checkout-btn {
+    color: white;
+    background-color: rgb(61, 61, 61);
+    font-size: 1.3vmin;
+}
+
+.total-container {
+    margin-top: 1vh;
+}
+
+#total-label {
+    margin-bottom: 1vh;
+    font-weight: 700;
+}
+
+.checkout-container {
+    display: flex;
+    align-items: left;
+    margin-top: 2vh;
 }
