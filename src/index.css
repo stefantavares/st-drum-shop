@@ -129,7 +129,7 @@ button, a.button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: .1vmin solid var(--black);
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;

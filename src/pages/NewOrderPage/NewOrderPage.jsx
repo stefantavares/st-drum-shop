@@ -26,7 +26,7 @@ function NewOrderPage({ user, setUser }) {
   return (
     <main className="NewOrderPage">
       <aside>
-          <h5>Shop By Category:</h5>
+          <h5 id="category-title">Shop By Category:</h5>
         <CategoryList
           categories={categoriesRef.current}
           activeCat={activeCat}

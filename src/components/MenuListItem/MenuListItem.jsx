@@ -7,8 +7,8 @@ export default function MenuListItem({ menuItem }) {
       <div className="name">{menuItem.name}</div>
       <div className="buy">
         <span>${menuItem.price.toFixed(2)}</span>
-        <button className="btn-sm" onClick={() => console.log('clicked')}>
-          BUY
+        <button className="btn-sm" id="buy-button" onClick={() => console.log('clicked')}>
+        <i class="far fa-cart-plus"></i>
         </button>
       </div>
     </div>

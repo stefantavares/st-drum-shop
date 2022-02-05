@@ -13,3 +13,7 @@
     align-items: center;
     margin: 3vmin 2vmin;
   }
+
+  #category-title {
+      font-size: 1.8vw;
+  }
