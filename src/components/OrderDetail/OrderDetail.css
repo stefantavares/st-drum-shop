@@ -26,10 +26,12 @@
   
   .OrderDetail .total {
     width: 100%;
-    display: grid;
-    grid-template-columns: 18.35vw 5.75vw 5.25vw;
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 18.35vw 5.75vw 5.25vw; */
     padding: 1vmin 0;
-    color: var(--text-light);
+    color: var(--black);
     border-top: .1vmin solid var(--tan-3);
   }
   
@@ -38,7 +40,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5vw;
-    color: var(--text-dark);
+    color: var(--black);
   }
   
   .OrderDetail .total span.right {

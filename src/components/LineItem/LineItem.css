@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
-    padding: 1vmin 0;
+    padding: 1.3vmin 0;
     color: var(--black);
     background-color: var(--white);
     border-top: .1vmin solid var(--black);
@@ -10,7 +10,7 @@
   }
   
   .LineItem:last-child {
-    border-bottom: .1vmin solid var(--black);
+    border-bottom: .1vmin solid black;
   }
   
   .LineItem .qty {
