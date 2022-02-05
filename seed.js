@@ -18,9 +18,9 @@ const Item = require('./models/item');
 
   await Item.deleteMany({});
   const items = await Item.create([
-    {name: 'Pearl Export', img: '', category: categories[0], price: 0},
-    {name: 'Yamaha Beach Custom', img: '', category: categories[0], price: 0},
-    {name: 'Ludwig Classic Maple', img: 'https://www.long-mcquade.com/files/123715/lg_f8c1d5131509efa6f92b61d08842f530.jpg', category: categories[0], price: 0},
+    {name: 'Pearl Export', img: '', category: categories[0], price: 300},
+    {name: 'Yamaha Beach Custom', img: '', category: categories[0], price: 2499},
+    {name: 'Ludwig Classic Maple', img: 'https://www.long-mcquade.com/files/123715/lg_f8c1d5131509efa6f92b61d08842f530.jpg', category: categories[0], price: 3450},
     {name: 'Ludwig Black Beauty', img: '', category: categories[1], price: 0},
     {name: 'Pearl Sensitone', img: '', category: categories[1], price: 0},
     {name: 'Ludwig Acrolite', img: '', category: categories[1], price: 0},

@@ -18,7 +18,7 @@ function NavBar({ user, setUser }) {
           <Link to="/orders/new">New Order</Link>
           &nbsp; | &nbsp;
           Welcome &nbsp;<span id="nav-username">{user.name}</span>
-          &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+          &nbsp;&nbsp;<Link id="logout" to="" onClick={handleLogOut}>Log Out</Link>
         </nav>
       );
 }
