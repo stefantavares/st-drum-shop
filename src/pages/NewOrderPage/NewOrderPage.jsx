@@ -40,21 +40,26 @@ function NewOrderPage({ user, setUser }) {
         const cat = item.category.name;
         return acc.includes(cat) ? acc : [...acc, cat]
       }, []);
+      brandsRef.current = items.reduce((acc, item) => {
+        const brand = item.brand.name;
+        return acc.includes(brand) ? acc : [...acc, brand]
+      }, []);
       setMenuItems(items);
       setActiveCat(items[0].category.name);
+      setActiveBrand(items[0].brand.name);
     }
     getItems();
 
-    async function getItems() {
-        const items = await itemsAPI.getAll();
-        brandsRef.current = items.reduce((acc, item) => {
-          const brand = item.brand.name;
-          return acc.includes(brand) ? acc : [...acc, brand]
-        }, []);
-        setMenuItems(items);
-        setActiveCat(items[0].brand.name);
-      }
-      getItems();
+    // async function getItems() {
+    //     const items = await itemsAPI.getAll();
+    //     brandsRef.current = items.reduce((acc, item) => {
+    //       const brand = item.brand.name;
+    //       return acc.includes(brand) ? acc : [...acc, brand]
+    //     }, []);
+    //     setMenuItems(items);
+    //     setActiveBrand(items[0].brand.name);
+    //   }
+    //   getItems();
 
     async function getCart() {
       const cart = await ordersAPI.getCart();

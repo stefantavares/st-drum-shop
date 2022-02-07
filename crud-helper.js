@@ -6,11 +6,12 @@ require('./config/database');
 const User = require('./models/user');
 const Item = require('./models/item');
 const Category = require('./models/category');
+const Brand = require('./models/brand');
 const Order = require('./models/order');
 
 (async function() {
   // Local variables will come in handy
-  let u, i, c, o;
+  let u, i, c, b, o;
   console.log(await Item.find({}));
 
 })();

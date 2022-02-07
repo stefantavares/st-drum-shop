@@ -1,6 +1,7 @@
 .CategoryList {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     color: var(--black);
     list-style: none;
     padding: 0;
