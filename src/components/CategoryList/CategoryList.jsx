@@ -1,7 +1,7 @@
 
 import './CategoryList.css';
 
-export default function CategoryList({ categories, activeCat, setActiveCat }) {
+function CategoryList({ categories, activeCat, setActiveCat }) {
   const cats = categories.map(cat =>
     <li
       key={cat}
@@ -17,3 +17,5 @@ export default function CategoryList({ categories, activeCat, setActiveCat }) {
     </ul>
   );
 }
+
+export default CategoryList;

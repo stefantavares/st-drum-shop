@@ -4,10 +4,25 @@
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid black;
+    margin: 2vh 5.5vw 0vh 5.5vw;
     text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.nav-orderhistory {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.logout {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }

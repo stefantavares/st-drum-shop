@@ -6,11 +6,13 @@ import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
+import Footer from '../../components/Footer/Footer';
 
 function App() {
   const [user, setUser] = useState(getUser());
 
   return (
+    <>
     <main className="App">
       { 
         user ?
@@ -20,11 +22,14 @@ function App() {
           <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
           <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
         </Routes>
+
         </>
         :
         <AuthPage setUser={setUser}/>
       }
     </main>
+      <Footer />
+    </>
   );
 }
 

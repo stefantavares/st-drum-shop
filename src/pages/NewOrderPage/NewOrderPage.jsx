@@ -6,12 +6,15 @@ import { Link, useNavigate } from 'react-router-dom';
 import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
+import BrandList from '../../components/BrandList/BrandList';
 
 function NewOrderPage({ user, setUser }) {
   const [menuItems, setMenuItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
+  const [activeBrand, setActiveBrand] = useState('');
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
+  const brandsRef = useRef([]);
 
   const navigate = useNavigate();
 
@@ -42,6 +45,17 @@ function NewOrderPage({ user, setUser }) {
     }
     getItems();
 
+    async function getItems() {
+        const items = await itemsAPI.getAll();
+        brandsRef.current = items.reduce((acc, item) => {
+          const brand = item.brand.name;
+          return acc.includes(brand) ? acc : [...acc, brand]
+        }, []);
+        setMenuItems(items);
+        setActiveCat(items[0].brand.name);
+      }
+      getItems();
+
     async function getCart() {
       const cart = await ordersAPI.getCart();
       setCart(cart);
@@ -51,6 +65,9 @@ function NewOrderPage({ user, setUser }) {
 
   return (
       <>
+        <div className='user-welcome-container'>
+        <p className='user-welcome'>Welcome <span id="nav-username">{user.name}</span></p>
+        </div>
       <header>
         <div id="category-container">
         <h5 id="category-title">Shop By Category</h5>
@@ -58,6 +75,11 @@ function NewOrderPage({ user, setUser }) {
           categories={categoriesRef.current}
           activeCat={activeCat}
           setActiveCat={setActiveCat}
+        />
+        <BrandList 
+        brands={brandsRef.current}
+        activeBrand={activeBrand}
+        setActiveBrand={setActiveBrand}
         />
         </div>
       </header>
