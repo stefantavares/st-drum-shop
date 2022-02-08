@@ -33,7 +33,7 @@ const Item = require('./models/item');
 
   await Item.deleteMany({});
   const items = await Item.create([
-    {name: 'Pearl Export EXX 5-Piece Shell Pack', img: 'https://media.guitarcenter.com/is/image/MMGS7/J40006000004000-00-720x720.jpg', category: categories[0], brand: brands[2], price: 1299},
+    {name: 'Pearl Export EXL New Fusion 5-Piece Shell Pack', img: 'https://media.guitarcenter.com/is/image/MMGS7/Export-EXL-New-Fusion-5-Piece-Shell-Pack-Black-Smoke/J20454000002000-00-220x220.jpg', category: categories[0], brand: brands[2], price: 599},
     {name: 'Pearl Decade Maple 3-Piece Shell Pack', img: 'https://media.guitarcenter.com/is/image/MMGS7/Decade-Maple-3-Piece-Shell-Pack-Satin-Black-Burst/J40006000004000-00-220x220.jpg', category: categories[0], brand: brands[2], price: 1299},
     {name: 'Yamaha Tour Custom 4', img: '', category: categories[0], brand: brands[4], price: 1359},
     {name: 'Ludwig Classic Maple 3-Piece Shell Pack', img: 'https://media.guitarcenter.com/is/image/MMGS7/Classic-Maple-3-Piece-Fab-Shell-Pack-with-22-in.-Bass-Drum-Red-Sparkle/K45602000006000-00-220x220.jpg', category: categories[0], brand: brands[0], price: 3450},
