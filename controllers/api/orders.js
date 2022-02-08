@@ -5,6 +5,7 @@ module.exports = {
   addToCart,
   setItemQtyInCart,
   checkout,
+  orders
 };
 
 async function cart(req, res) {
@@ -30,3 +31,8 @@ async function checkout(req, res) {
   await cart.save();
   res.json(cart);
 }
+
+async function orders(req, res) {
+    const orders = await Order.getOrders(req.user._id);
+    res.json(orders);
+  }
