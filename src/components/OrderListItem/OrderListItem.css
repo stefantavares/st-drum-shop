@@ -33,7 +33,7 @@
 
   .OrderListItem .orderId {
     font-weight: 400;
-    font-size: 2.9vw;
+    font-size: 2.4vw;
   }
 
   .OrderListItem .orderTotal {
@@ -44,7 +44,7 @@
   .OrderListItem .orderDate {
     font-weight: 400;
     font-size: 1.6vw;
-    margin-top: 1vw;
+    margin-top: 1.3vw;
   }
 
   .OrderListItem .totalQty {
