@@ -7,19 +7,26 @@ import OrderList from '../../components/OrderList/OrderList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 
 function OrderHistoryPage() {
-    const [orders, setOrders] = useState([]);
+    const [orderItems, setOrderItems] = useState([]);
     const [activeOrder, setActiveOrder] = useState(null);
 
-
-//   async function handleCheckToken() {
-//     const expDate = await usersService.checkToken();
-//     console.log(new Date(expDate));
-//   }
+    useEffect(function() {
+        async function getOrders() {
+          const orders = await ordersAPI.getOrders();
+          setOrderItems(orders);
+        }
+        getOrders();
+      }, []);
 
   return (
-    <>
-      <h1>OrderHistory</h1>
-    </>
+    <main className="OrderHistoryPage">
+    <OrderList 
+      orderItems={orderItems}
+    />
+    <OrderDetail 
+    />
+
+  </main>
   );
 }
 
