@@ -47,7 +47,6 @@
 
 #buy-button:hover {
     border-bottom: 0.3vh solid rgb(2, 148, 2);
-    /* border-left: 0.5vw solid rgb(3, 173, 3); */
     border-radius: 0px;
 }
 
@@ -56,7 +55,7 @@
     background-color: white;
     font-size: 1vmin;
     width: 11vw;
-    margin-top: 3vh;
+    margin-top: vh;
     border: 1px solid rgb(80, 79, 79);
     border-radius: 2px;
 }
@@ -64,21 +63,30 @@
 #details-button:hover {
     color: white;
     background-color: rgb(80, 79, 79);
-    font-size: 1vmin;
-    width: 11vw;
-    margin-top: 3vh;
     border: 1px solid rgb(80, 79, 79);
-    border-radius: 2px;
 }
 
 .name {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 15.5vw;
 }
 
 #add-to-cart {
     font-size: .8vw;
     margin-top: 0.4vh;
+}
+
+.item-img {
+    height: 11vmin;
+    width: 11vmin;
+}
+
+.img-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

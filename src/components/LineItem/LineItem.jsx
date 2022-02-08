@@ -6,7 +6,7 @@ function LineItem({ lineItem, isPaid, handleChangeQty }) {
       {/* <div className="flex-ctr-ctr">{lineItem.item.url}</div> */}
       <div className="flex-ctr-ctr flex-col" id='name-price'>
         <span className="align-ctr" id='item-name'>{lineItem.item.name}</span>
-        <span>${lineItem.item.price.toFixed(2)}</span>
+        {/* <span>${lineItem.item.price.toFixed(2)}</span> */}
       </div>
       <div className="qty" style={{ justifyContent: isPaid && 'center' }}>
         {!isPaid &&

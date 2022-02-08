@@ -21,7 +21,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             :
             <span>NEW ORDER</span>
         }
-          <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
+          <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span>
         </div>
         <div className="line-item-container flex-ctr-ctr flex-col scroll-y">
           {lineItems.length ?
@@ -51,7 +51,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
               </div>
             </>
             :
-            <div className="hungry"><i className="far fa-cart-arrow-down"></i></div>
+            <div className="cart-img"><i className="far fa-cart-arrow-down"></i></div>
         }
       </div>
         </div>

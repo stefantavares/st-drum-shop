@@ -17,6 +17,10 @@
     font-weight: 500;
     margin-bottom: 4vh;
 }
+
+.order-date {
+    font-size: 1.6vw;
+}
   
 .OrderDetail .line-item-container {
     margin-top: 3vmin;
@@ -49,7 +53,7 @@
     justify-content: flex-end;
 }
   
-.OrderDetail .hungry {
+.OrderDetail .cart-img {
     position: absolute;
     top: 50vh;
     font-size: 2vmin;
@@ -63,6 +67,7 @@
     color: white;
     background-color: rgb(80, 79, 79);
     font-size: 1.3vmin;
+    margin-left: 0px;
 }
 
 .total-container {
@@ -79,3 +84,4 @@
     align-items: left;
     margin-top: 2vh;
 }
+
