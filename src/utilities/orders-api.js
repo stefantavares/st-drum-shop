@@ -3,9 +3,7 @@ import sendRequest from './send-request';
 const BASE_URL = '/api/orders';
 
 export function getOrders() {
-  const orders = sendRequest(BASE_URL);
-  console.log("frontend api orders", orders);
-  return orders;
+    return sendRequest(BASE_URL);
 }
 
 export function getCart() {

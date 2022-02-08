@@ -25,7 +25,6 @@ const orderSchema = new Schema({
 });
 
 orderSchema.virtual('orderTotal').get(function() {
-  // 'this' is bound to the order doc
   return this.lineItems.reduce((total, item) => total + item.extPrice, 0);
 });
 
@@ -36,6 +35,11 @@ orderSchema.virtual('totalQty').get(function() {
 orderSchema.virtual('orderId').get(function() {
   return this.id.slice(-6).toUpperCase();
 });
+
+orderSchema.statics.getOrders = async function(userId) {
+    const orders = await this.find({user: userId, isPaid: true}).exec();
+    return orders;
+  };
 
 orderSchema.statics.getCart = function(userId) {
   return this.findOneAndUpdate(

@@ -1,0 +1,26 @@
+.OrderListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vmin;
+    padding: 2vmin;
+    color: black;
+    background-color: var(--white);
+    border: .1vmin solid black;
+    border-radius: 1vmin;
+    font-size: 4vmin;
+  }
+  
+  
+  .OrderListItem .right {
+    text-align: right;
+  }
+  
+  .OrderListItem .bottom {
+    font-size: 1.7vw;
+  }
+  
+  .OrderListItem .orderIdText {
+    font-weight: 600;
+  }

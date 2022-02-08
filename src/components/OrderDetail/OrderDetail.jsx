@@ -29,7 +29,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
               {lineItems}
               <div className="total">
                 {order.isPaid ?
-                  <span className="right">TOTAL&nbsp;&nbsp;</span>
+                  <div></div>
                   :
                   <div>
                   <div className='total-container'>
@@ -46,6 +46,10 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                   </div>
                 }
                 {/* <span>{order.totalQty}</span> */}
+                <div className='total-container'>
+                      <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span>
+                    <span className="right">${order.orderTotal.toFixed(2)}</span>
+                    </div>
                 
 
               </div>

@@ -1,7 +1,5 @@
 import './OrderHistoryPage.css';
-import * as usersService from '../../utilities/users-service';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import * as ordersAPI from '../../utilities/orders-api';
 import OrderList from '../../components/OrderList/OrderList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
@@ -14,18 +12,26 @@ function OrderHistoryPage() {
         async function getOrders() {
           const orders = await ordersAPI.getOrders();
           setOrderItems(orders);
+          setActiveOrder(orders[orders.length - 1]);
         }
         getOrders();
       }, []);
 
+    async function handleShowOrder(order) {
+        setActiveOrder(order);
+    }
+
   return (
     <main className="OrderHistoryPage">
+    <aside>
     <OrderList 
-      orderItems={orderItems}
+        orderItems={orderItems}
+        handleShowOrder={handleShowOrder}
     />
+    </aside>
     <OrderDetail 
+        order={activeOrder} 
     />
-
   </main>
   );
 }
