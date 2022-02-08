@@ -90,7 +90,8 @@ function NewOrderPage({ user, setUser }) {
       </header>
     <main className="NewOrderPage">
       <MenuList
-        menuItems={menuItems.filter(item => item.category.name === activeCat)}
+        menuItems={menuItems.filter(item => item.category.name === activeCat)
+          .filter(item =>item.brand.name === activeBrand)}
         handleAddToOrder={handleAddToOrder}
       />
       <OrderDetail 

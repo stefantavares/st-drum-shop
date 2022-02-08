@@ -19,16 +19,16 @@ const Item = require('./models/item');
 
   await Brand.deleteMany({});
   const brands = await Brand.create([
-      {name: 'Ludwig', sortOrder: 10}, // [0]
-      {name: 'Slingerland', sortOrder: 20}, // [1]
-      {name: 'Pearl', sortOrder: 30}, // [2]
-      {name: 'George Way', sortOrder: 40}, // [3]
-      {name: 'Yamaha', sortOrder: 50}, // [4]
-      {name: 'Istanbul', sortOrder: 60}, // [5]
-      {name: 'Promark', sortOrder: 70}, // [6]
-      {name: 'Vic Firth', sortOrder: 80}, // [7]
-      {name: 'Vater', sortOrder: 90}, // [8]
-      {name: 'Remo', sortOrder: 100}, // [9]
+    {name: 'Ludwig', sortOrder: 10}, // [0]
+    {name: 'Slingerland', sortOrder: 20}, // [1]
+    {name: 'Pearl', sortOrder: 30}, // [2]
+    {name: 'George Way', sortOrder: 40}, // [3]
+    {name: 'Yamaha', sortOrder: 50}, // [4]
+    {name: 'Istanbul', sortOrder: 60}, // [5]
+    {name: 'Promark', sortOrder: 70}, // [6]
+    {name: 'Vic Firth', sortOrder: 80}, // [7]
+    {name: 'Vater', sortOrder: 90}, // [8]
+    {name: 'Remo', sortOrder: 100}, // [9]
   ])
 
   await Item.deleteMany({});
@@ -36,7 +36,7 @@ const Item = require('./models/item');
     {name: 'Pearl Export', img: '', category: categories[0], brand: brands[2], price: 300},
     {name: 'Yamaha Beach Custom', img: '', category: categories[0], brand: brands[4], price: 2499},
     {name: 'Ludwig Classic Maple', img: '', category: categories[0], brand: brands[0], price: 3450},
-    {name: 'Ludwig Black Beauty', img: '', category: categories[1], brand: brands[0], price: 0},
+    {name: 'Ludwig Black Beauty', img: 'https://cdn.long-mcquade.com/files/2230/md_318abd73fecc2e353ce285c4c0ecd0d3.jpg', category: categories[1], brand: brands[0], price: 0},
     {name: 'Pearl Sensitone', img: '', category: categories[1], brand: brands[2], price: 0},
     {name: 'Ludwig Acrolite', img: '', category: categories[1], brand: brands[0], price: 0},
     {name: 'Slingerland COB', img: '', category: categories[1], brand: brands[1], price: 0},

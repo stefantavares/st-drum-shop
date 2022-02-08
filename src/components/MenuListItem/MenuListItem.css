@@ -10,30 +10,30 @@
     border: .1vmin solid var(--black);
     border-radius: 2px;
     font-size: 4vmin;
-  }
+}
   
-  .MenuListItem .img {
+.MenuListItem .img {
     height: 50px;
-  }
+}
   
-  .MenuListItem .buy {
+.MenuListItem .buy {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .MenuListItem .buy span {
+.MenuListItem .buy span {
     font-size: 1.7vw;
     text-align: center;
     color: var(--black);
-  }
+}
   
-  .MenuListItem .name {
+.MenuListItem .name {
     font-size: 1.5vw;
     text-align: center;
     color: var(--black);
-  }
+}
 
-  #buy-button {
+#buy-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,6 +49,33 @@
     border-bottom: 0.3vh solid rgb(2, 148, 2);
     /* border-left: 0.5vw solid rgb(3, 173, 3); */
     border-radius: 0px;
+}
+
+#details-button {
+    color: rgb(80, 79, 79);
+    background-color: white;
+    font-size: 1vmin;
+    width: 11vw;
+    margin-top: 3vh;
+    border: 1px solid rgb(80, 79, 79);
+    border-radius: 2px;
+}
+
+#details-button:hover {
+    color: white;
+    background-color: rgb(80, 79, 79);
+    font-size: 1vmin;
+    width: 11vw;
+    margin-top: 3vh;
+    border: 1px solid rgb(80, 79, 79);
+    border-radius: 2px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #add-to-cart {
