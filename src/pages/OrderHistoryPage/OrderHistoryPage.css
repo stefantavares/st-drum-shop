@@ -14,3 +14,21 @@
     align-items: center;
     margin: 3vmin 2vmin;
   }
+
+  .title {
+    font-size: 3vw;
+    font-weight: 400;
+    margin-top: 3.2vh;
+    margin-bottom: 2.4vh;
+  }
+
+  #back-to-shopping {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: 1.6vw;
+}

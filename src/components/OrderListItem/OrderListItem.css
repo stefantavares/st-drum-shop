@@ -1,5 +1,5 @@
 .OrderListItem {
-    width: 100%;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,6 +10,11 @@
     border: .1vmin solid black;
     border-radius: 1vmin;
     font-size: 4vmin;
+  }
+
+  .OrderListItem:hover {
+      cursor: pointer;
+      border: 2px solid black;
   }
   
   
@@ -22,5 +27,27 @@
   }
   
   .OrderListItem .orderIdText {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1.9vw;
+  }
+
+  .OrderListItem .orderId {
+    font-weight: 400;
+    font-size: 2.9vw;
+  }
+
+  .OrderListItem .orderTotal {
+    font-weight: 400;
+    font-size: 1.9vw;
+  }
+
+  .OrderListItem .orderDate {
+    font-weight: 400;
+    font-size: 1.6vw;
+    margin-top: 1vw;
+  }
+
+  .OrderListItem .totalQty {
+    margin-top: 1vw;
+    font-size: 1.4vw;
   }

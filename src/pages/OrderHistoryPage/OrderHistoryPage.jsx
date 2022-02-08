@@ -1,10 +1,11 @@
 import './OrderHistoryPage.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import * as ordersAPI from '../../utilities/orders-api';
 import OrderList from '../../components/OrderList/OrderList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 
-function OrderHistoryPage() {
+function OrderHistoryPage({ user }) {
     const [orderItems, setOrderItems] = useState([]);
     const [activeOrder, setActiveOrder] = useState(null);
 
@@ -22,6 +23,11 @@ function OrderHistoryPage() {
     }
 
   return (
+    <>
+    <header>
+      <Link id='back-to-shopping' to="/">Back To Shopping</Link>
+      <h1 className='title'>Your Order History </h1>
+      </header>
     <main className="OrderHistoryPage">
     <aside>
     <OrderList 
@@ -33,6 +39,7 @@ function OrderHistoryPage() {
         order={activeOrder} 
     />
   </main>
+  </>
   );
 }
 
