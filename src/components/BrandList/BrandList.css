@@ -9,6 +9,7 @@
   }
   
 .BrandList li {
+    font-size: 1.3vw;
     padding: .6vmin;
     text-align: center;
     margin: 1vmin;
@@ -20,6 +21,7 @@
   }
   
 .BrandList li.active {
+    font-weight: 700;
     color: var(--black);
     background-color: var(--white);
     border-bottom: .1vmin solid var(--black);

@@ -34,3 +34,7 @@ header {
     font-size: 1.7vw;
     margin: 0vh 5.5vw 0vh 5.5vw;
 }
+
+#nav-username {
+    font-weight: 700;
+}

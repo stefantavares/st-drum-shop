@@ -37,7 +37,7 @@ function ItemDetailPage({ menuItems }) {
         <div className='item-property'><span className='bold'>Size(s):</span></div>
         <div><span className='smaller'>{item.size}</span></div>
         <div className='item-property'><span className='bold'>Description:</span></div>
-        <div><span className='smaller'>{item.description}</span></div>
+        <div className='description'><span className='smaller'>{item.description}</span></div>
         </div>
         </main>
         </>

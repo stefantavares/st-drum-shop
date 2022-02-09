@@ -29,8 +29,8 @@ const Item = require('./models/item');
     {name: 'Vic Firth', sortOrder: 80}, // [7]
     {name: 'Vater', sortOrder: 90}, // [8]
     {name: 'Remo', sortOrder: 100}, // [9]
-    {name: 'Evans', sortOrder: 100}, // [10]
-    {name: 'Gibraltar', sortOrder: 100}, // [10]
+    {name: 'Evans', sortOrder: 110}, // [10]
+    {name: 'Gibraltar', sortOrder: 120}, // [11]
   ])
 
   await Item.deleteMany({});
@@ -229,22 +229,58 @@ const Item = require('./models/item');
     },
     // Sticks
     {
-      name: 'Promark 5AB', 
+      name: 'Promark TX5ABW', 
       img: 'https://media.guitarcenter.com/is/image/MMGS7/Select-Balance-Rebound-Balance-Acorn-Tip-Drum-Sticks-5B/J30833000003000-00-220x220.jpg', 
       category: categories[3], 
       brand: brands[6], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 14.50,
+      size: 'Betweem 5A and 5b',
+      description: 'The 5AB is like the classic 5A, but with a shorter taper and slightly larger tip for added durability and projection.'
+    },
+    {
+      name: 'Promark BYOS Hickory Oval Wood Tip', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/BYOS-Hickory-Oval-Wood-Tip-Drumsticks/J39222000000000-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[6], 
+      price: 12.99,
+      size: 'Custom',
+      description: 'The BYOS stick is engineered to function as a traditional marching implement and a well-balanced show-style trick stick. Featuring a medium taper and large barrel tip, this stick will provide the necessary output volume needed for the marching activity both indoor or out.'
+    },
+    {
+      name: 'Promark Japanese White Oak Drumsticks Nylon Tip', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Japanese-White-Oak-Drumsticks-Nylon-7A/443180000281029-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[6], 
+      price: 15.49,
+      size: 'Custom',
+      description: 'Pro-Mark Japanese white oak drumsticks are balanced and carefully crafted using hand-selected white oak. Grown in the mountainous regions of Japan, this particular species of oak is a harder wood than hickory and will take more wear, tear, and punishment. It resists chipping and wearing soft.'
     },
     {
       name: 'Vic Firth 5A', 
       img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Classic-Hickory-Drum-Sticks-Wood-5A/460490000645021-00-220x220.jpg', 
       category: categories[3], 
       brand: brands[7], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 9.99,
+      size: '5A',
+      description: 'The American Classic drum stick line combines tradition and Vic Firth style. With bold designs for fuller sound and deeply back-cut tips for intensified cymbal response, the American Classic dum sticks are turned from select hickory, further enhancing their durability and sound.'
+    },
+    {
+      name: 'Vic Firth 5B', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Classic-Hickory-Drum-Sticks-Wood-5A/460490000645021-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[7], 
+      price: 9.99,
+      size: '5B',
+      description: 'The American Classic drum stick line combines tradition and Vic Firth style. With bold designs for fuller sound and deeply back-cut tips for intensified cymbal response, the American Classic dum sticks are turned from select hickory, further enhancing their durability and sound.'
+    },
+    {
+      name: 'Vic Firth American Concept Freestyle Drum Sticks', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Concept-Freestyle-Drum-Sticks-5B-Wood/L44664000002001-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[7], 
+      price: 9.99,
+      size: 'Medium Guage',
+      description: 'Inspired by the sport of Freestyle longboarding, the Freestyle series of sticks is all about effortless flow, creativity and style. Exaggerated tapers on extra long sticks more than doubles the area where a drummer can place their fulcrum, opening up creative possibilities and unlocking the ultimate expressive drumming experience..'
     },
     {
       name: 'Vater 3A', 
@@ -255,40 +291,58 @@ const Item = require('./models/item');
       size: '',
       description: ''
     },
+    {
+      name: 'Vater American Hickory Los Angeles 5A Drumsticks', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Hickory-Los-Angeles-5A-Drumsticks-Nylon/J44281000000001-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[8], 
+      price: 9.49,
+      size: '5A',
+      description: 'American Hickory dowels have to meet very strict quality characteristics to become a Vater drum stick. Vater only uses dowels that have a specific moisture content, straightness and grain structure, to produce a higher quality drum stick. These Vater American Hickory Los Angeles 5A drum sticks are formed from hickory—the most popular drumstick material. Hickory is dense and strong so it is resistant to chipping and breaking. Stronger than maple, it also absorbs a lot of shock. As a result, these sticks lessen wrist and hand fatigue while playing.'
+    },
+    {
+      name: 'Vater American Hickory 5B Drum Sticks', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Hickory-5B-Drum-Sticks-Nylon/J44215000000001-00-220x220.jpg', 
+      category: categories[3], 
+      brand: brands[8], 
+      price: 9.49,
+      size: '5B',
+      description: 'These Vater 5B Drumsticks are formed from hickory—the most popular drumstick material. Hickory is dense and strong so it is resistant to chipping and breaking. Stronger than maple, it also absorbs a lot of shock. As a result, these sticks lessen wrist and hand fatigue while playing.'
+    },
     // Heads
     {
-      name: 'Remo Coated Ambassador', 
-      img: '', 
+      name: 'Remo Ambassador Coated Head', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Ambassador-Coated-Head-14-in./L74760000001000-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[9], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 12.99,
+      size: '10" - 24"',
+      description: 'Remo Weather King Ambassador Coated Heads are the most widely used drumheads in the world. The ones all others are judged by. Medium thickness. The Weather King Ambassador heads are the reigning champs for studio recording.'
     },
     {
-      name: 'Remo Coated Emperor', 
-      img: '', 
+      name: 'Remo Emperor Coated Drum Head', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Emperor-Coated-Drum-Head-12-in./442306000000076-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[9], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 12.99,
+      size: '10" - 24"',
+      description: 'These heads use 2 free-floating plies of 7-mil film, which give them their consistent open tones and account for their popularity among many of today&rsquo;s top drummers. In 10", 12", 13", 14", or 16".'
     },
     {
-      name: 'Remo Powerstroke 3', 
-      img: '', 
+      name: 'Remo Powerstroke 3 Coated with Dot Batter', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Powerstroke-3-Coated-with-Dot-Batter-13-in./442943000000078-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[9], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 19.99,
+      size: '10" - 24"',
+      description: 'The Remo Powerstroke 3 Coated Batter is a coated head forged from a single ply with an underlay ring at the outer edge.'
     },
     // Hardware
     {
       name: 'Stand 1', 
       img: '', 
       category: categories[5], 
-      brand: brands[2], 
+      brand: brands[11], 
       price: 0,
       size: '',
       description: ''
@@ -297,7 +351,7 @@ const Item = require('./models/item');
       name: 'Stand 2', 
       img: '', 
       category: categories[5], 
-      brand: brands[2], 
+      brand: brands[11], 
       price: 0,
       size: '',
       description: ''
@@ -306,7 +360,7 @@ const Item = require('./models/item');
       name: 'Stand 3', 
       img: '', 
       category: categories[5], 
-      brand: brands[2], 
+      brand: brands[11], 
       price: 0,
       size: '',
       description: ''
