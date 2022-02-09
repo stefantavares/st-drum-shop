@@ -30,9 +30,15 @@ function ItemDetailPage({ menuItems }) {
         <header>
         <Link id='back-to-shopping' to="/">Back To Shopping</Link>
         </header>
-        <divh1>{item.name}</divh1>
         <main className='details-container'>
-        <img src={item.img} alt="" />
+        <img className='item-img' src={item.img} alt="" />
+        <h4 id='item-name'>{item.name}</h4>
+        <div className='item-details-container'>
+        <div className='item-property'><span className='bold'>Size(s):</span></div>
+        <div><span className='smaller'>{item.size}</span></div>
+        <div className='item-property'><span className='bold'>Description:</span></div>
+        <div><span className='smaller'>{item.description}</span></div>
+        </div>
         </main>
         </>
     )

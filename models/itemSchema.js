@@ -6,6 +6,8 @@ const itemSchema = new Schema({
   category: {type: Schema.Types.ObjectId, ref: 'Category'},
   brand: {type: Schema.Types.ObjectId, ref: 'Brand'},
   price: { type: Number, required: true, default: 0 },
+  size: String,
+  description: String
 }, {
   timestamps: true
 });

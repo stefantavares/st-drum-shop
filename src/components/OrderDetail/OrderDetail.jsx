@@ -33,7 +33,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                   :
                   <div>
                   <div className='total-container'>
-                      <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span>
+                      {/* <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span> */}
                     </div>
                         <div className='checkout-container'>
                             <button

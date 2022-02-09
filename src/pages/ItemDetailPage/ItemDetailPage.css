@@ -1,4 +1,25 @@
 .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.item-details-container {
     display: grid;
     grid-template-columns: 2, 1fr;
+}
+
+#back-to-shopping {
+    margin-bottom: 5vh;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.item-property {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
 }
