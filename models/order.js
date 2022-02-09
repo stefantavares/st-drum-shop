@@ -11,7 +11,6 @@ const lineItemSchema = new Schema({
 });
 
 lineItemSchema.virtual('extPrice').get(function() {
-  // 'this' is bound to the lineItem subdoc
   return this.qty * this.item.price;
 });
 

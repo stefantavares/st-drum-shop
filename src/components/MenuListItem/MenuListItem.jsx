@@ -1,14 +1,13 @@
 import './MenuListItem.css';
+import { Link } from 'react-router-dom';
 
 export default function MenuListItem({ menuItem, handleAddToOrder }) {
-    console.log(menuItem);
   return (
     <div className="MenuListItem">
         <div className='img-details'>
             <img className='item-img' src={menuItem.img} alt="" />
-            <button className="btn-sm" id="details-button">DETAILS</button>
+            <Link id='details-button'to={`items/${menuItem._id}`}>DETAILS</Link>
         </div>
-      {/* <div className="img flex-ctr-ctr" style={{backgroundImage: `url(${menuItem.img})`}}></div> */}
       <div className="name">
         {menuItem.name}
       </div>

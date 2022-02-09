@@ -51,11 +51,17 @@
 }
 
 #details-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(80, 79, 79);
     background-color: white;
-    font-size: 1vmin;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1vmin;
     width: 11vw;
-    margin-top: vh;
+    height: 2vh;
+    margin-top: 1vh;
     border: 1px solid rgb(80, 79, 79);
     border-radius: 2px;
 }

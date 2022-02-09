@@ -2,7 +2,7 @@ import './NewOrderPage.css';
 import { useState, useEffect, useRef } from 'react';
 import * as itemsAPI from '../../utilities/items-api';
 import * as ordersAPI from '../../utilities/orders-api';
-import { useNavigate } from 'react-router-dom';
+import { Route, useNavigate } from 'react-router-dom';
 import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
@@ -78,11 +78,13 @@ function NewOrderPage({ user, setUser }) {
         </div>
       </header>
     <main className="NewOrderPage">
+
       <MenuList
         menuItems={menuItems.filter(item => item.category.name === activeCat)
           .filter(item =>item.brand.name === activeBrand)}
         handleAddToOrder={handleAddToOrder}
       />
+
       <OrderDetail 
       order={cart}
       handleChangeQty={handleChangeQty}
