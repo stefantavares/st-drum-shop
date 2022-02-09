@@ -59,9 +59,6 @@ function NewOrderPage({ user, setUser }) {
 
   return (
       <>
-        <div className='user-welcome-container'>
-        <p className='user-welcome'>Welcome <span id="nav-username">{user.name}</span></p>
-        </div>
       <header>
         <div id="category-container">
         <h5 id="category-title">SHOP CATEGORIES</h5>

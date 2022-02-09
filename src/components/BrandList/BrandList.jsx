@@ -4,7 +4,7 @@ function BrandList({ brands, activeBrand, setActiveBrand }) {
     const brnds = brands.map(brand =>
       <li
         key={brand}
-        className={brand === activeBrand ? 'active' : ''}
+        className={brand === activeBrand ? 'active grow' : 'grow'}
         onClick={() => setActiveBrand(brand)}
       >
         {brand}

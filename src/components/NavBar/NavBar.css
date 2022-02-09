@@ -2,7 +2,7 @@
     font-weight: 900px;
 }
 
-nav {
+.links-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,10 +19,26 @@ nav {
     border-top: 1px solid black;
 }
 
+.nav-orderhistory:hover {
+    font-weight: 700;
+}
+
 .logout {
     text-decoration: none;
     color: black;
     padding: 5px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+}
+
+.logout:hover {
+    font-weight: 700;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover { 
+    transform: scale(1.1); 
 }

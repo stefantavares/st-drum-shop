@@ -14,9 +14,14 @@
     margin: 3vmin 2vmin;
 }
 
+.category-container {
+    padding-top: 3vh;
+}
+
 #category-title {
     font-size: 1.8vw;
-    margin-top: 0;
+    margin-bottom: 2vh;
+    margin-top: .6vh;
 }
 
 header {

@@ -3,23 +3,22 @@ import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 
 function NavBar({ user, setUser }) {
-    // Add the following function
     function handleLogOut() {
-      // Delegate to the users-service
       userService.logOut();
-      // Update state will also cause a re-render
       setUser(null);
     }
 
     return (
         <nav>
-          <Link className='nav-orderhistory' to="/orders">Order History</Link>
+          <div className='links-container'>
+          <Link className='nav-orderhistory grow' to="/orders">Order History</Link>
           <div>
-          {/* <Link className='nav-orderhistory' to="/orders/new">New Order</Link> */}
-          {/* &nbsp; | &nbsp; */}
-          {/* Welcome <span id="nav-username">{user.name}</span> */}
           </div>
-          &nbsp;&nbsp;<Link className="logout" to="" onClick={handleLogOut}>Log Out</Link>
+          <Link className="logout grow" to="" onClick={handleLogOut}>Log Out</Link>
+          </div>
+          <div className='user-welcome-container'>
+        <p className='user-welcome'>Welcome <span id="nav-username">{user.name}</span></p>
+        </div>
         </nav>
       );
 }

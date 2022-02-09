@@ -5,7 +5,7 @@
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--black);
-    margin-top: 2.3vh;
+    /* margin-top: 0vh; */
 }
   
 .OrderDetail .section-heading {
@@ -95,6 +95,10 @@
     margin-left: 0px;
 }
 
+#checkout-btn:hover {
+    background-color: black;
+}
+
 .total-container {
     margin-top: 1vh;
 }
@@ -109,5 +113,3 @@
     align-items: left;
     margin-top: 2vh;
 }
-
-

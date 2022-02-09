@@ -11,14 +11,14 @@ function LineItem({ lineItem, isPaid, handleChangeQty }) {
       <div className="qty" style={{ justifyContent: isPaid && 'center' }}>
         {!isPaid &&
           <button
-            className="btn-xs" id='qty-minus'
+            className="btn-xs grow" id='qty-minus'
             onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty - 1)}
             >−</button>
           }
         <span>{lineItem.qty}</span>
         {!isPaid &&
           <button
-            className="btn-xs" id='qty-plus'
+            className="btn-xs grow" id='qty-plus'
             onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty + 1)}
           >+</button>
         }

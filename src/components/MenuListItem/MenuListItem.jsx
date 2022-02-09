@@ -5,15 +5,15 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
   return (
     <div className="MenuListItem">
         <div className='img-details'>
-            <img className='item-img' src={menuItem.img} alt="" />
-            <Link id='details-button'to={`items/${menuItem._id}`}>DETAILS</Link>
+            <img className='item-img grow' src={menuItem.img} alt="" />
+            <Link className='grow' id='details-button'to={`items/${menuItem._id}`}>DETAILS</Link>
         </div>
       <div className="name">
         {menuItem.name}
       </div>
       <div className="buy">
         <span>${menuItem.price.toFixed(2)}</span>
-        <button className="btn-sm" id="buy-button" onClick={() => handleAddToOrder(menuItem._id)}>
+        <button className="btn-sm grow" id="buy-button" onClick={() => handleAddToOrder(menuItem._id)}>
         <i className="far fa-cart-plus"></i>
         <span id="add-to-cart">ADD TO CART</span>
         </button>

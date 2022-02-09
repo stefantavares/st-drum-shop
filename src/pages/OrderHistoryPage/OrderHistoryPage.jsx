@@ -25,7 +25,7 @@ function OrderHistoryPage({ user }) {
   return (
     <>
     <header>
-      <Link id='back-to-shopping' to="/">Back To Shopping</Link>
+      <Link className='grow' id='back-to-shopping' to="/">Back To Shopping</Link>
       </header>
       <h1 className='title'>{user.name}'s Order History </h1>
     <main className="OrderHistoryPage">

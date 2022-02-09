@@ -17,14 +17,16 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
       <div className="OrderDetail">
         <div className="section-heading">
           {order.isPaid ?
+            <>
             <span>ORDER <span className="smaller">{order.orderId}</span></span>
+            <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span>
+            </>
             :
             <div className='cart-header'>
             <span>SHOPPING CART &nbsp;</span>
             <div className='item-counter'>{order.totalQty}</div>
             </div>
         }
-          {/* <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span> */}
         </div>
         <div className="line-item-container flex-ctr-ctr flex-col scroll-y">
           {lineItems.length ?
