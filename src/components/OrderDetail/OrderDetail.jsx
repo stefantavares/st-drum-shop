@@ -19,9 +19,12 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
           {order.isPaid ?
             <span>ORDER <span className="smaller">{order.orderId}</span></span>
             :
-            <span>SHOPPING CART</span>
+            <div className='cart-header'>
+            <span>SHOPPING CART &nbsp;</span>
+            <div className='item-counter'>{order.totalQty}</div>
+            </div>
         }
-          <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span>
+          {/* <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span> */}
         </div>
         <div className="line-item-container flex-ctr-ctr flex-col scroll-y">
           {lineItems.length ?
@@ -33,7 +36,6 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                   :
                   <div>
                   <div className='total-container'>
-                      {/* <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span> */}
                     </div>
                         <div className='checkout-container'>
                             <button
@@ -44,7 +46,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                         </div>
                   </div>
                 }
-                {/* <span>{order.totalQty}</span> */}
+                <span>{order.totalQty}</span>
                 <div className='total-container'>
                       <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span>
                     <span className="right">${order.orderTotal.toFixed(2)}</span>
@@ -54,7 +56,9 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
               </div>
             </>
             :
-            <div className="cart-img"><i className="far fa-cart-arrow-down"></i></div>
+            <>
+            <div className="cart-img"><p id='cart-message'>Nothing in cart yet</p><i className="far fa-cart-arrow-down"></i></div>
+            </>
         }
       </div>
         </div>

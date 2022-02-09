@@ -27,7 +27,7 @@ function OrderHistoryPage({ user }) {
     <header>
       <Link id='back-to-shopping' to="/">Back To Shopping</Link>
       </header>
-      <h1 className='title'>Your Order History </h1>
+      <h1 className='title'>{user.name}'s Order History </h1>
     <main className="OrderHistoryPage">
     <aside>
     <OrderList 

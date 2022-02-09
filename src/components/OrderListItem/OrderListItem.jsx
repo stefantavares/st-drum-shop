@@ -6,7 +6,7 @@ export default function OrderListItem({ orderItem, handleShowOrder }) {
   return (
     <div className="OrderListItem" onClick={() => handleShowOrder(orderItem)}>
       <div className="left">
-        <div className="orderId">Order &nbsp; - &nbsp;<span className="orderIdText">{orderItem.orderId}</span></div>
+        <div className="orderId">ORDER &nbsp; - &nbsp;<span className="orderIdText">{orderItem.orderId}</span></div>
         <div className="orderDate bottom">{orderDate}</div>
       </div>
       <div className="right">

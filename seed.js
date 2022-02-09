@@ -141,7 +141,7 @@ const Item = require('./models/item');
       img: 'https://media.guitarcenter.com/is/image/MMGS7/Supraphonic-Snare-Drum-Chrome-14-x-6.5-in./446280000375488-00-220x220.jpg', 
       category: categories[1], 
       brand: brands[0], 
-      price: 0,
+      price: 589.00,
       size: '',
       description: ''
     },
