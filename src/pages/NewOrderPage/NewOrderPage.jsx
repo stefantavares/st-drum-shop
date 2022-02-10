@@ -68,6 +68,8 @@ function NewOrderPage({ user, setUser }) {
           setActiveCat={setActiveCat}
         />
         <BrandList 
+        menuItems={menuItems.filter(item => item.category.name === activeCat)
+        .filter(item =>item.brand.name === activeBrand)}
         brands={brandsRef.current}
         activeBrand={activeBrand}
         setActiveBrand={setActiveBrand}
