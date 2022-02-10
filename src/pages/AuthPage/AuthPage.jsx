@@ -13,7 +13,7 @@ function AuthPage({ setUser }) {
             <h4 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 
             <div className='auth-aside'>
             <div className='logo'>ST DRUM SH<i className="fa-light fa-drum" id='logo-icon'></i>P</div>
-            <h2>Don't have an account yet?</h2>
+            <h2 className='auth-message-1'>Don't have an account yet?</h2>
             <div className='signup-btn grow'>SIGN UP</div>
             </div>
             : 
@@ -33,7 +33,7 @@ function AuthPage({ setUser }) {
             </div>
             : 
             <div>
-            <h4 className='auth-message-2'>Please sign in to begin shopping</h4>
+            <h4 className='auth-message-2'>Please create an account to begin shopping</h4>
             <SignUpForm setUser={setUser} />
             </div>
             }

@@ -27,13 +27,12 @@
 }
 
 .login-btn, .signup-btn {
-    font-size: 1.2vw;
+    font-size: 1.2vmin;
     text-decoration: none;
     color: black;
     padding: 5px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
-    margin-right: 3.5vw;
     width: 7vw;
 }
 
@@ -47,7 +46,7 @@
 }
 
 .auth-message-1 {
-    font-size: 2.4vmin;
+    font-size: 2.2vmin;
     font-weight: 350;
 }
 
