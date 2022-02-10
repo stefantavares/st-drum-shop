@@ -58,7 +58,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             </>
             :
             <>
-            <div className="cart-img"><p id='cart-message'>Nothing in cart yet</p><i className="far fa-cart-arrow-down"></i></div>
+            <div className="cart-img"><p id='cart-message'>Nothing in cart</p><i className="far fa-cart-arrow-down"></i></div>
             </>
         }
       </div>

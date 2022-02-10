@@ -3,10 +3,8 @@ import './LineItem.css';
 function LineItem({ lineItem, isPaid, handleChangeQty }) {
   return (
     <div className="LineItem">
-      {/* <div className="flex-ctr-ctr">{lineItem.item.url}</div> */}
       <div className="flex-ctr-ctr flex-col" id='name-price'>
         <span className="align-ctr" id='item-name'>{lineItem.item.name}</span>
-        {/* <span>${lineItem.item.price.toFixed(2)}</span> */}
       </div>
       <div className="qty" style={{ justifyContent: isPaid && 'center' }}>
         {!isPaid &&
