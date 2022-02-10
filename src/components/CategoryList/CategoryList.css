@@ -24,7 +24,7 @@
 }
   
 .CategoryList li.active {
-    font-weight: 700;
+    font-weight: 650;
     color: var(--black);
     background-color: var(--white);
     border-bottom: .1vmin solid black;
@@ -32,9 +32,9 @@
 }
 
 .grow {
-  transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .grow:hover { 
-  transform: scale(1.1); 
+    transform: scale(1.1); 
 }

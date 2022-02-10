@@ -1,3 +1,7 @@
+.user-welcome-container {
+    height: 3vh;
+}
+
 #nav-username {
     font-weight: 900px;
 }
@@ -11,12 +15,32 @@
     font-size: 1.4vw;
 }
 
+#history-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+
+#logo-icon {
+    font-size: 3vw;
+    font-weight: 400;
+}
+
 .nav-orderhistory {
+    font-size: 1.2vw;
     text-decoration: none;
     color: black;
     padding: 5px;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    margin-right: 3.5vw;
 }
 
 .nav-orderhistory:hover {
@@ -24,6 +48,7 @@
 }
 
 .logout {
+    font-size: 1.2vw;
     text-decoration: none;
     color: black;
     padding: 5px;

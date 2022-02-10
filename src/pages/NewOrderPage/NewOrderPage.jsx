@@ -60,8 +60,8 @@ function NewOrderPage({ user, setUser }) {
   return (
       <>
       <header>
-        <div id="category-container">
         <h5 id="category-title">SHOP CATEGORIES</h5>
+        <div id="category-container">
         <CategoryList
           categories={categoriesRef.current}
           activeCat={activeCat}

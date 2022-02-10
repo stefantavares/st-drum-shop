@@ -10,9 +10,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4.3vh 5vw 6vh 5vw;
+    padding: 2.5vh 5vw 6vh 5vw;
     width: 65vw;
-    margin-top: 6vh;
+    margin-top: 5.2vh;
     border: 1px solid black;
     border-radius: 2px;
 }
@@ -20,7 +20,8 @@
 
 .item-details-img {
     height: 20vh;
-    margin-bottom: 2.6vh;
+    margin-bottom: 1.2vh;
+    margin-top: 0vh;
 }
 
 #back-to-shopping {
@@ -28,8 +29,12 @@
 }
 
 .bold {
-    font-weight: 700;
-    font-size: 1.6vw;
+    font-weight: 650;
+    font-size: 1.5vw;
+}
+
+#item-name {
+    margin-top: 0vh;
 }
 
 .item-property {

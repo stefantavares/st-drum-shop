@@ -21,7 +21,7 @@
 }
   
 .BrandList li.active {
-    font-weight: 700;
+    font-weight: 650;
     color: var(--black);
     background-color: var(--white);
     border-bottom: .1vmin solid black;

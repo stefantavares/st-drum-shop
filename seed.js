@@ -42,8 +42,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[0], 
       price: 2149,
-      size: '',
-      description: ''
+      size: '22x15", 12x8.5", 16x16"',
+      description: "Preferred by professionals for superior tone and versatility, Classic Maple drums are the ideal choice for any performance application. A perfect blend of high sensitivity, wide dynamic tuning range, and sharp attack make Classic Maple the ideal choice for live performance. Classic Maple's 7-ply shell is crafted to respond to the player and environment quickly, making it adaptable to any playing style or preference."
     },
     {
       name: 'Ludwig Neusonic 3 piece FAB Shell Pack', 
@@ -51,8 +51,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[0], 
       price: 1259,
-      size: '',
-      description: ''
+      size: '20x15", 12x8.5", 14x14"',
+      description: "Handcrafted by Ludwig in Monroe, NC., Signet 105 Series Drums are designed to give the up-and-coming player high-end North American Maple tone at unbeatable low prices. The drummer builds and personalizes the kit in minutes following a simple, rewarding assembly process, thanks to Ludwig's Insta-Lite screw-less lugs and Triad 3-point tom suspension mounts."
     },
     {
       name: 'Ludwig Signet 105 Gigabeat 3-Piece Shell Pack', 
@@ -61,7 +61,7 @@ const Item = require('./models/item');
       brand: brands[0], 
       price: 3450,
       size: '',
-      description: ''
+      description: " "
     },
     {
       name: 'Pearl Export EXL New Fusion 5-Piece Shell Pack', 
@@ -69,8 +69,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[2], 
       price: 599,
-      size: '',
-      description: ''
+      size: '22x16", 10x7", 12x8", 16x14"',
+      description: "Export Series returns again - this time with a lacquer finish. Offering updated hardware features, SST shell construction and suspended mounts, these Export drums are better than you remember them. The 6-ply poplar and mahogany shells churn out balanced attack and full tone, while the high-end hardware will make your trip down memory lane a pleasant one. Pearl's updated Export Series offers a sonically advanced recipe of strategically arranged plies of premium wood to maximize frequency response of every component. As with all Pearl drums, each shell is formed from our legendary SST construction process that uses extreme heat, Precision-cut scarf joints, proprietary Acoustiglue and over 1000lb. of hydraulic pressure to create the ultimate acoustic air chamber."
     },
     {
       name: 'Pearl Decade Maple 3-Piece Shell Pack', 
@@ -78,8 +78,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[2], 
       price: 1299,
-      size: '',
-      description: ''
+      size: '22x14", 12x8", 16x14"',
+      description: 'Decade’s 6-ply/5.4mm all maple shell is what sets it apart from the other players in the field. The final product of ten years of process and material refinement, each cross-laminated ply incorporates Pearl’s proprietary Superior Shell Technology. Pearl’s Superior Shell Technology utilizes a proprietary technique for achieving the ultimate air chamber. It begins with select woods chosen for their unique acoustic attributes, milled to precise thickness with overlapping scarf joint seams, for a perfect air-tight fit. The wood plies are saturated with Pearl’s proprietary “AcoustiGlue” that permeates every pore and dries to the exact consistency of the wood for optimum resonance.'
     },
     {
       name: 'Pearl Crystal Beat 5-Piece Shell Pack', 
@@ -87,8 +87,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[2], 
       price: 1889,
-      size: '',
-      description: ''
+      size: '22x16", 20x7", 12x8", 14x13", 16x15"',
+      description: "In 1973, Pearl set a benchmark in the drumming world with the introduction of Crystal Beat. A stunning combination of visual appeal and powerful sonic attack, Crystal Beat's revolutionary seamless construction was molded -not rolled- creating a strong acrylic drum system that could stand up to the riggors of touring. The shells of the Crystal Beat series produce fat attack with big projection and clipped resonance. Tom and share shells are 6mm thick, while the kick drum measures 7mm. The drums are fitted with 1.6mm triple-flanged hoops for just the right amount of attack without sacrificing tonal body."
     },
     {
       name: 'Gretsch Drums Broadkaster Series 3- Piece Shell Pack', 
@@ -97,7 +97,7 @@ const Item = require('./models/item');
       brand: brands[4], 
       price: 3000,
       size: '24x14, 12x9, 16x16',
-      description: 'Awesome drum kit no doubt.'
+      description: "Featuring 3-ply shells made individually using oversized plies of North American maple/poplar/maple, the reintroduced Gretsch Broadkaster calls upon a rich musical lineage of quality materials, craftsmanship and superstar alumni. The Broadkaster was the top-of-the-line kit for Gretsch in the 1930's boasting players a vertible who's who of big band and jazz drummers."
     },
     {
       name: 'Gretsch Drums Renown 4-Piece Shell Pack', 
@@ -105,8 +105,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[4], 
       price: 1399,
-      size: '',
-      description: ''
+      size: '20x14",10x7", 12x8", 16x14", 14x5.5"',
+      description: "Since its initial launch in 2001, Gretsch Catalina has received many high marks from students, educators, and performing drummers around the world and today the Catalina Maple and Club series are still recognized as high quality pro-ready instruments that are reasonably priced. Gretsch Drums Catalina Special Edition expands on the sound, feel and classy look of Catalina with affordability still in mind. Its 7-ply birch shells with the natural shell interior and 30º bearing edge are the foundation of Catalina SE. The mounting hardware includes the signature round gas cap bass drum mount plate and an ultra-low profile GTS mounting system. T-Wing screws and bolts are included on all fittings to round out it's classic Gretsch look. Each drum's interior label specifies the year of production and species of wood the shell is made of."
     },
     {
       name: 'Gretsch Drums Catalina Special Edition Birch 5-Piece Shell Pack', 
@@ -124,8 +124,8 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[0], 
       price: 1125,
-      size: '',
-      description: ''
+      size: '14" x 6.5"',
+      description: 'The Ludwig Black Beauty snare drum is considered one of the most desirable drums ever made. The seamless, one piece brass beaded shell provides the legendary balanced metallic-yet-warm sound and ease of tuning that this classic drum is famous for, while the Supraphonic snares and classic P-85 snare throw-off provide the unmatched sensitivity professionals demand. The antique black anodized shell, chrome hardware, and imperial lugs make the Black Beauty strikingly beautiful.'
     },
     {
       name: 'Ludwig LE Legacy Mahogany', 
@@ -133,26 +133,26 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[0], 
       price: 1209,
-      size: '',
-      description: ''
+      size: '14" x 6.5"',
+      description: 'In the tradition of Ludwig’s “Victorious” drums of the 1940s, the Legacy Mahogany Black Cat Snare Drum features a black stain finish with silver sparkle inlaid maple hoops finished in black. This limited edition is available in two popular outfits, Fab (limited to 40) and Pro Beat (limited to 20). Featuring the Special Edition "Enamel" badge, the Black Cat Snare blends the iconic Ludwig sound with the aesthetics of yesteryear.'
     },
     {
       name: 'Ludwig Supraphonic', 
       img: 'https://media.guitarcenter.com/is/image/MMGS7/Supraphonic-Snare-Drum-Chrome-14-x-6.5-in./446280000375488-00-220x220.jpg', 
       category: categories[1], 
       brand: brands[0], 
-      price: 589.00,
-      size: '',
-      description: ''
+      price: 589,
+      size: '14" x 6.5"',
+      description: "The Ludwig Supraphonic Snare Drum features chrome metal shell construction that offers a bright, cutting, and crisp sound found on a multitude of classic pop and jazz hits of the last several decades. The Supraphonic snares are wonderfully responsive, a quality that's further enhanced by their triple-flanged hoops. The 6-1/2 inch deep version produces deep, fat tone and great projection. 10 classic lugs, with a P-85 throw-off. A versatile drum that's perfect for styles ranging from symphonic to arena rock."
     },
     {
       name: 'Ludwig Acrolite', 
       img: 'https://media.guitarcenter.com/is/image/MMGS7/Hammered-Acrolite-Snare-Drum-14-x-6.5-in./K47596000002000-00-220x220.jpg', 
       category: categories[1], 
       brand: brands[0], 
-      price: 0,
-      size: '',
-      description: ''
+      price: 479,
+      size: '14" x 6.5"',
+      description: 'Originally introduced in 1963 as a student drum, the Ludwig Acrolite quickly became the choice of pro players in need of dry, cracking snare tone. Ludwig is proud to re-introduce Acrolite in its original splendor; with a seamless, beaded, brushed-aluminum shell. Made in Monroe, North Carolina, USA. The Acrolite features chrome Classic dual snare lugs, P85 strainer, and Blue/Olive Badge.'
     },
     {
       name: 'Pearl Sensitone', 
@@ -160,8 +160,8 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[2], 
       price: 0,
-      size: '',
-      description: ''
+      size: '14" x 6.5"',
+      description: "The Sensitone Snare from Pearl is drawn from a combination of Heritage Alloys. These vital, immediate tones recall legendary chart-toppers with an undeniable modern sensibility. The Sensitone Heritage Alloy Aluminum model features a 1.2mm seamless beaded shell, and delivers the goods with gig-ready touches to make it a utility standard for the tonally nuanced player."
     },
     {
       name: 'Pearl Masters BCX Birch Snare Drum', 
@@ -169,8 +169,8 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[2], 
       price: 477.99,
-      size: '',
-      description: ''
+      size: '14" x 5.5"',
+      description: "Building upon the outstanding legacy of thin shell Masters Custom drums, the Pearl Masters BCX Birch Snare Drum offers projection and attack for the prefect bridge between player and audience. The 6-ply, 100% birch shell produces focused power and tone with great cut, along with a quick resonance. The drum also features Masters hardware including: MasterCast die-cast hoops, SR-017 vertical pull strainer, bridge lugs, steel tension rods with brass swivel nuts and Remo Ambassador heads."
     },
     {
       name: 'Pearl Reference Snare Drum', 
@@ -178,17 +178,17 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[2], 
       price: 719.40,
-      size: '',
-      description: ''
+      size: '14" x 6.5"',
+      description: "Reference Series snare drums are available in three different shell sizes: 14x5, 14x6-1/2 and 13 x 6-1/2 to suit individual preferences and tastes. The heart and soul of your kit is your snare drum and Pearl's Reference Series snare drums shine through loud and clear. Simply amazing volume."
     },
     {
       name: 'George Way Nyatoh Snare Drum', 
-      img: 'https://cdn.long-mcquade.com/files/94272/md_08ac1df03ca5ef9c55379da162dce709.jpg', 
+      img: 'https://cdn.shopify.com/s/files/1/0277/2835/products/GW654T-W_1.jpg?v=1575933012', 
       category: categories[1], 
       brand: brands[3], 
       price: 575,
-      size: '',
-      description: ''
+      size: '14" x 6.5"',
+      description: "The shell construction uses 4 layers of select Nyatoh with matching 4 layer reinforcement rings. The warmth of the wood shell is augmented by the solid attack provided Way's Double Edge-Double Flange hoops. Fitted with the famous Way 845 'Beer Tap' throw off, Way high carbon steel snare wires, Remo Ambassador batter and Dunnett Cristal snare side heads, this classic snare drum makes for an effective, versatile and affordable wood shell snare drum and a welcome addition to every snare drum arsenal."
     },
     {
       name: 'George Way Aristocrat Studio Snare', 
@@ -196,8 +196,44 @@ const Item = require('./models/item');
       category: categories[1], 
       brand: brands[3], 
       price: 595,
-      size: '',
-      description: ''
+      size: '14" x 6.5',
+      description: 'The George H. Way 14x6.5 Aristocrat Studio Snare Drum (AS654GB) has a 4-ply maple/poplar/poplar/maple shell with 4-ply maple reinforcement rings. This George H. Way snare drum features LA Camco "Bullet Style" bearing edges, double edge-double flange hoops, 8 aristocrat lugs, 845 "Beer Tap" throw-off, 20-strand snare wires, and a George H. Way Res-O-Tone drumhead. This snare drum has a Black Gloss Lacquer finish, George Way black and gold badge, and chrome hardware.'
+    },
+    {
+      name: 'George Way Elkhart Copper', 
+      img: 'https://d2bghjaa5qmp6f.cloudfront.net/resize/images/Dunnett/Dunnett-GW654-CU-full.jpg', 
+      category: categories[1], 
+      brand: brands[3], 
+      price: 595,
+      size: '14" x 6.5',
+      description: 'With nearly a century of experience, the George H. Way Drum Company has a long history of crafting high-quality instruments without all of the extraneous design frills introduced by larger drum companies. The "Elkhart" Snare Drum features a medium-thick copper shell, giving you a middle-of the-road sound between the warmness of wood and the bite of a metal drum. Vintage-looking Streamline lug casings and triple-flanged hoops are also included. The chrome plating on every metal component of the drum and the polished finish give this instrument that truly professional look.'
+    },
+    {
+      name: 'Gretsch Drums Black Nickel Over Steel Snare Drum', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Black-Nickel-Over-Steel-Snare-Drum/L00685000000000-00-220x220.jpg', 
+      category: categories[1], 
+      brand: brands[4], 
+      price: 290,
+      size: '14" x 6.5"',
+      description: 'Like all Gretsch snares, the Black Nickel Over Steel snare is a workhorse; a drum that just works no matter the room or the acoustics. The 1.2 mm, 14x6.5" Black Nickel Plated shell is balanced, full and responsive to any style. Built for power out of the box, Gretsch also includes a Coated Remo batter head, 2.3 mm steel hoops, classic lugs, and 20-strand snares—all at a price that makes it easy to add this drum to any snare arsenal.'
+    },
+    {
+      name: 'Gretsch Drums Brooklyn Standard Snare Drum', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Brooklyn-Standard-Snare-Drum-14-x-5.5-in.-Satin-Black-Metallic/L70407000001001-00-220x220.jpg', 
+      category: categories[1], 
+      brand: brands[4], 
+      price: 529,
+      size: '14" x 5.5"',
+      description: 'Developed in collaboration with drummer and educator Mike Johnston, the Gretsch Brooklyn Standard snare drum combines throwback looks with modern versatility. Johnston wanted a signature snare drum with the widest possible dynamic range across the full spectrum of tunings. After 9 months of prototyping and testing, Gretsch finally delivered the perfect match, and the Brooklyn Standard was born. Guitar Center offers this adaptable snare to a wide variety of players. It’s an exciting vintage-style drum for collectors and professionals, but thanks to Johnston’s purposeful design, it’s just as appropriate for students looking for their first pro-level snare drum.'
+    },
+    {
+      name: 'Gretsch Drums USA Custom Snare Drum', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/USA-Custom-Snare-Drum-14-x-5-in.-Natural-Satin/J56878000001002-00-220x220.jpg', 
+      category: categories[1], 
+      brand: brands[4], 
+      price: 546,
+      size: '14" x 5.5"',
+      description: 'Gretsch USA Custom 5x14 in. snare drums have been a significant part of “That Great Gretsch Sound” for over 65 years. At the heart of each drum is the legendary 6-ply Gretsch-formula maple/gum shell with its expertly formed 30-degree bearing edge, the exclusive "Silver Sealer” interior finish and rugged die cast hoops.'
     },
     // Cymbals
     {

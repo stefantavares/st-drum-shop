@@ -15,13 +15,16 @@
 }
 
 .category-container {
-    padding-top: 3vh;
+    padding-top: 2.5vh;
 }
 
 #category-title {
-    font-size: 1.8vw;
-    margin-bottom: 2vh;
-    margin-top: .6vh;
+    font-size: 1.4vw;
+    margin-bottom: 1.2vh;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid black;
+    width: 49vw;
 }
 
 header {
