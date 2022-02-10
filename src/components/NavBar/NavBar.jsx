@@ -12,13 +12,13 @@ function NavBar({ user, setUser }) {
         <nav>
           <div className='links-container'>
             <div id='history-logo-container'>
-          <div className='logo'><i className="fa-regular fa-drum" id='logo-icon'></i>&nbsp;&nbsp; ST DRUM SHOP</div>
+          <div className='logo'>ST DRUM SH<i className="fa-light fa-drum" id='logo-icon'></i>P</div>
           </div>
           <div>
           </div>
           <div>
-          <Link className='nav-orderhistory grow' to="/orders">Order History</Link>
-          <Link className="logout grow" to="" onClick={handleLogOut}>Log Out</Link>
+          <Link className='nav-orderhistory grow' to="/orders">Order History &nbsp;<i class="fa-regular fa-list"></i></Link>
+          <Link className="logout grow" to="" onClick={handleLogOut}>Log Out &nbsp;<i class="fa-regular fa-user"></i></Link>
           </div>
           </div>
           <div className='user-welcome-container'>

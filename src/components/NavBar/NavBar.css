@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .user-welcome-container {
     height: 3vh;
 }
@@ -18,19 +20,23 @@
 #history-logo-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    font-size: 2.2vw;
-    font-weight: 700;
+    font-size: 2.4vw;
+    font-weight: 400;
+    font-family: 'M PLUS 1', sans-serif;
+    letter-spacing: .1vw;
 }
 
 #logo-icon {
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-weight: 400;
+    margin: 0vmin .3vmin 0vmin .3vmin;
 }
 
 .nav-orderhistory {

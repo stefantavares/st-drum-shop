@@ -28,7 +28,7 @@ function ItemDetailPage({ menuItems }) {
     return (
         <>
         <header>
-        <Link className='grow' id='back-to-shopping' to="/">Back To Shopping</Link>
+        <Link className='grow' id='back-to-shopping' to="/"><i className="fa-regular fa-angle-left"></i> Back To Shopping</Link>
         </header>
         <main className='page-container'>
         <div className='details-container'>
@@ -37,8 +37,10 @@ function ItemDetailPage({ menuItems }) {
         <div className='item-details-container'>
         <div className='item-property'><span className='bold'>Size(s):</span></div>
         <div><span className='smaller'>{item.size}</span></div>
+        <div className='grow'>
         <div className='item-property'><span className='bold'>Description:</span></div>
         <div className='description'><span className='smaller'>{item.description}</span></div>
+        </div>
         </div>
         </div>
         </main>

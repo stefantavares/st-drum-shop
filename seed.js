@@ -105,7 +105,7 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[4], 
       price: 1399,
-      size: '20x14",10x7", 12x8", 16x14", 14x5.5"',
+      size: '20x14", 10x7", 12x8", 16x14", 14x5.5"',
       description: "Since its initial launch in 2001, Gretsch Catalina has received many high marks from students, educators, and performing drummers around the world and today the Catalina Maple and Club series are still recognized as high quality pro-ready instruments that are reasonably priced. Gretsch Drums Catalina Special Edition expands on the sound, feel and classy look of Catalina with affordability still in mind. Its 7-ply birch shells with the natural shell interior and 30º bearing edge are the foundation of Catalina SE. The mounting hardware includes the signature round gas cap bass drum mount plate and an ultra-low profile GTS mounting system. T-Wing screws and bolts are included on all fittings to round out it's classic Gretsch look. Each drum's interior label specifies the year of production and species of wood the shell is made of."
     },
     {
@@ -114,8 +114,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[4], 
       price: 799,
-      size: '',
-      description: ''
+      size: '20x14", 10x7", 14x14", 14x5.5"',
+      description: "Since its initial launch in 2001, Gretsch Catalina has received many high marks from students, educators, and performing drummers around the world and today the Catalina Maple and Club series are still recognized as high quality pro-ready instruments that are reasonably priced. Gretsch Drums Catalina Special Edition expands on the sound, feel and classy look of Catalina with affordability still in mind. Its 7-ply birch shells with the natural shell interior and 30º bearing edge are the foundation of Catalina SE. The mounting hardware includes the signature round gas cap bass drum mount plate and an ultra-low profile GTS mounting system. T-Wing screws and bolts are included on all fittings to round out it's classic Gretsch look. Each drum's interior label specifies the year of production and species of wood the shell is made of."
     },
     // Snares
     {
