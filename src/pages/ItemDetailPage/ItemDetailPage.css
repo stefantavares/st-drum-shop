@@ -17,6 +17,20 @@
     border-radius: 2px;
 }
 
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 52vw;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.6vmin;
+    color: rgb(0, 95, 0);
+}
 
 .item-details-img {
     height: 20vh;
@@ -39,7 +53,7 @@
 }
 
 .item-property {
-    margin-top: 2.8vh;
+    margin-top: 2vh;
     margin-bottom: .7vh;
 }
 

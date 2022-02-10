@@ -32,15 +32,21 @@ function ItemDetailPage({ menuItems }) {
         </header>
         <main className='page-container'>
         <div className='details-container'>
+        <h3 className='price-container'><span className='price'>${item.price}</span></h3>
+        {/* <div className="buy">
+        <span>${item.price.toFixed(2)}</span>
+        <button className="btn-sm grow" id="buy-button" >
+        <i className="far fa-cart-plus"></i>
+        <span id="add-to-cart">ADD TO CART</span>
+        </button>
+      </div> */}
         <img className='item-details-img grow' src={item.img} alt="" />
         <h4 id='item-name'>{item.name}</h4>
         <div className='item-details-container'>
         <div className='item-property'><span className='bold'>Size(s):</span></div>
         <div><span className='smaller'>{item.size}</span></div>
-        <div className='grow'>
         <div className='item-property'><span className='bold'>Description:</span></div>
         <div className='description'><span className='smaller'>{item.description}</span></div>
-        </div>
         </div>
         </div>
         </main>

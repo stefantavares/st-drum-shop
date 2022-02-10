@@ -1,9 +1,12 @@
 .MenuList {
-    background-color: var(--white);
-    /* border: .1vmin solid var(--black); */
-    margin: 3vmin 0;
-    padding: 3vmin;
-    /* overflow-y: scroll; */
-      /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-  }
+  background-color: var(--white);
+  margin: 3vmin 0;
+  padding: 3vmin;
+}
+
+.no-items-msg {
+  font-size: 1.6vw;
+  font-weight: 450;
+  margin-top: 8vh;
+  color: rgb(122, 122, 122);
+}

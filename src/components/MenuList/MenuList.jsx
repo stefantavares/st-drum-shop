@@ -11,7 +11,13 @@ export default function MenuList({ menuItems, handleAddToOrder }) {
   );
   return (
     <main className="MenuList">
+      {items.length ? 
+      <>
       {items}
+      </>
+      :
+      <h2 className='no-items-msg'>No Items To Show...</h2>
+    }
     </main>
   );
 }
