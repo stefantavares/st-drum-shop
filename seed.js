@@ -373,6 +373,15 @@ const Item = require('./models/item');
       size: '10" - 24"',
       description: 'The Remo Powerstroke 3 Coated Batter is a coated head forged from a single ply with an underlay ring at the outer edge.'
     },
+    {
+      name: 'Remo Powerstroke 3 Coated with Dot Batter', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Powerstroke-3-Coated-with-Dot-Batter-13-in./442943000000078-00-220x220.jpg', 
+      category: categories[4], 
+      brand: brands[10], 
+      price: 19.99,
+      size: '10" - 24"',
+      description: 'The Remo Powerstroke 3 Coated Batter is a coated head forged from a single ply with an underlay ring at the outer edge.'
+    },
     // Hardware
     {
       name: 'Stand 1', 
