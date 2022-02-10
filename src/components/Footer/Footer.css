@@ -11,5 +11,12 @@ footer {
 }
 
 .fab {
-    margin: 0px 4px 0px 4px;
+    font-size: 20px;
+    margin: 0px 15px 5px 15px;
+    transition: all .2s ease-in-out;
+}
+
+.fab:hover {
+    font-size: 23px;
+    cursor: pointer;
 }

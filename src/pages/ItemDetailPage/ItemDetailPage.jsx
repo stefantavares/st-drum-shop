@@ -39,7 +39,7 @@ function ItemDetailPage({ menuItems }) {
         <i className="far fa-cart-plus"></i>
         <span id="add-to-cart">ADD TO CART</span>
         </button>
-      </div> */}
+        </div> */}
         <img className='item-details-img grow' src={item.img} alt="" />
         <h4 id='item-name'>{item.name}</h4>
         <div className='item-details-container'>
