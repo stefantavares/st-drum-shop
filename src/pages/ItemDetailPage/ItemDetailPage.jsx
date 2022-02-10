@@ -1,14 +1,22 @@
 import './ItemDetailPage.css';
 import * as itemsAPI from '../../utilities/items-api';
+import * as ordersAPI from "../../utilities/orders-api";
 import { useState, useEffect, useRef } from 'react';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 
 function ItemDetailPage({ menuItems }) {
     const [item, setItem] = useState({});
+    const [cart, setCart] = useState(null);
     let { itemName } = useParams();
     const isMounted = useRef(true);
+    const navigate = useNavigate();
+
+    async function handleAddToOrder(itemId) {
+        const cart = await ordersAPI.addItemToCart(itemId);
+        setCart(cart);
+      }
 
     async function getItem() {
         const itemOne = await itemsAPI.getById(itemName)
