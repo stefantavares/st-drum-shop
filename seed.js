@@ -60,8 +60,8 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[0], 
       price: 3450.00,
-      size: '',
-      description: " "
+      size: '20x14",12x8", 16x14"',
+      description: "Up for grabs is a New Ludwig Signet 3 piece shell pack. These kits were designed to be the most affordable USA made maple shell packs at the time. The snap in lugs allowed the customer to literally put together the shells eliminating a step in the finally assembly in order to keep the price down."
     },
     {
       name: 'Pearl Export EXL New Fusion 5-Piece Shell Pack', 
@@ -242,8 +242,8 @@ const Item = require('./models/item');
       category: categories[2], 
       brand: brands[5], 
       price: 154.99,
-      size: '',
-      description: ''
+      size: '14" - 22"',
+      description: 'Xist Crashes have a papery attack, and a medium decay.'
     },
     {
       name: 'Istanbul Agop Traditional Dark Crash', 
@@ -251,8 +251,8 @@ const Item = require('./models/item');
       category: categories[2], 
       brand: brands[5], 
       price: 239.99,
-      size: '',
-      description: ''
+      size: '14" - 22"',
+      description: 'Dark and punchy. Answers quickly with fewer high frequency overtones.'
     },
     {
       name: 'Istanbul Agop Joey Waronker Signature Ride', 
@@ -260,8 +260,17 @@ const Item = require('./models/item');
       category: categories[2], 
       brand: brands[5], 
       price: 699.99,
-      size: '',
-      description: ''
+      size: '24"',
+      description: "Designed to stand out both in the studio and live, Joey's Signature ride employs lighter, more even hammering, a medium weight and finer lathing to achieve a clear and focused stick sound. When crashed, the attack is glassy and focused with an even and balanced decay.The new 14” Hi Hats offer a very well defined, and articulate chic/stick, while presenting a nice mellow wash when played open."
+    },
+    {
+      name: 'Sultan Hi-Hats', 
+      img: 'https://istanbulcymbals.com//upload/products/27/sultan-hi-hat-alt_big.jpg', 
+      category: categories[2], 
+      brand: brands[5], 
+      price: 622.79,
+      size: '13" - 15"',
+      description: 'Sultan Series combine the brilliance of classic, lathed Traditional Series and the dryness of raw, unlathed Turk Series. The varied playing surfaces provide a wide range of sonic textures. Crashes produce slightly mellowed tone with controlled spread and quick decay. Rides express themselves with full-bodied responses, strong definition and ample but controlled overtones, open up slightly before rolling back into tight, sweet articulated sticking patterns. Hats offer a dark chick sound with a well-contained stick response.'
     },
     // Sticks
     {
@@ -323,9 +332,9 @@ const Item = require('./models/item');
       img: 'https://media.guitarcenter.com/is/image/MMGS7/American-Hickory-Fatback-3A-Drum-Sticks-Wood/J44212000000002-00-220x220.jpg', 
       category: categories[3], 
       brand: brands[8], 
-      price: 0.00,
-      size: '',
-      description: ''
+      price: 12.99,
+      size: 'N/A',
+      description: 'Sturdy shoulder and neck with a rounded barrel tip for volume.'
     },
     {
       name: 'Vater American Hickory Los Angeles 5A Drumsticks', 
@@ -374,87 +383,141 @@ const Item = require('./models/item');
       description: 'The Remo Powerstroke 3 Coated Batter is a coated head forged from a single ply with an underlay ring at the outer edge.'
     },
     {
-      name: 'Evans 1', 
-      img: 'https://media.guitarcenter.com/is/image/MMGS7/Powerstroke-3-Coated-with-Dot-Batter-13-in./442943000000078-00-220x220.jpg', 
+      name: 'Remo Ebony Regular Bass Head', 
+      img: 'https://cdn.long-mcquade.com/files/2518/md_ebony.jpg', 
+      category: categories[4], 
+      brand: brands[9], 
+      price: 65.99,
+      size: '18" - 26"',
+      description: 'The POWERSONIC Bass Drumheads gives the drummer controlled mid range and low end for the most powerful bass drum sound thats IT, right out of the box.'
+    },
+    {
+      name: 'Evans G2 Coated Batter Drumhead', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/G2-Coated-Batter-Drumhead-14-in./440260000000080-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[10], 
-      price: 19.99,
-      size: '10" - 24"',
+      price: 18.70,
+      size: '6" - 18"',
+      description: 'Evans G2 Coated Batter Drumheads are durable 2-ply tom heads with a coating for added warmth, focus, and depth. These heads make small toms sing and floor toms growl. Very popular among professional drummers.'
+    },
+    {
+      name: 'Evans EC2 SST Clear Batter Drumhead', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/EC2-SST-Clear-Batter-Drumhead-18-in./502350000018000-00-220x220.jpg', 
+      category: categories[4], 
+      brand: brands[10], 
+      price: 21.73,
+      size: '6" - 18"',
       description: ''
     },
     {
-      name: 'Evans 2', 
-      img: 'https://media.guitarcenter.com/is/image/MMGS7/Powerstroke-3-Coated-with-Dot-Batter-13-in./442943000000078-00-220x220.jpg', 
+      name: 'Evans Genera Dry Batter Snare Head', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Genera-Dry-Batter-Snare-Head-14-in./447861000000080-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[10], 
       price: 19.99,
-      size: '10" - 24"',
-      description: ''
+      size: '8" - 18"',
+      description: 'The Genera is a 10mil, single-ply head with a 2mil overtone control ring on the underside that "floats" with the head, eliminating excessive overtones. Additional dry vents eliminate stray harmonics.'
     },
     {
-      name: 'Evans 3', 
-      img: 'https://media.guitarcenter.com/is/image/MMGS7/Powerstroke-3-Coated-with-Dot-Batter-13-in./442943000000078-00-220x220.jpg', 
+      name: 'Evans EMAD 2 Clear Batter Bass Drumhead', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/EMAD-2-Clear-Batter-Bass-Drumhead-22-in./447856000000092-00-220x220.jpg', 
       category: categories[4], 
       brand: brands[10], 
-      price: 19.99,
-      size: '10" - 24"',
-      description: ''
+      price: 61.46,
+      size: '18" - 26"',
+      description: 'With the included damping rings, the user can change the amount of ring in seconds to maximize attack and low end. 2-ply head.'
+    },
+    {
+      name: 'Evans EMAD Resonant Bass Drum Head', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/EMAD-Resonant-Bass-Drum-Head-Black-22-in./447855000001092-00-220x220.jpg', 
+      category: categories[4], 
+      brand: brands[10], 
+      price: 61.46,
+      size: '18" - 26"',
+      description: 'With accentuated low-end response, the EMAD Resonant is constructed using a 7.5mil black film with a 6.5mil fixed internal control ring. It comes with an Externally Mounted Adjustable Damping system installed around the 4" offset microphone port that allows the user to manipulate attack, tone, and sustain without the need for internal damping.'
     },
     // Hardware
     {
-      name: 'Stand 1', 
-      img: '', 
+      name: 'Gibraltar Medium Weight Extended Height Concert Snare Stand', 
+      img: 'https://cdn.long-mcquade.com/files/180140/md_5cf02b707397b0a8b46dcbf9771f6524.jpg', 
       category: categories[5], 
       brand: brands[11], 
-      price: 0.00,
-      size: '',
-      description: ''
+      price: 109.99,
+      size: 'Medium weight',
+      description: 'Great for Orchestra and band situations. Low mass, double-braced tripod for added stability. Exclusive round rubber feet provide stability without a large profile'
     },
     {
-      name: 'Stand 2', 
-      img: '', 
+      name: 'Gibraltar Medium Weight Double Braced Hi Hat Stand', 
+      img: 'https://cdn.long-mcquade.com/files/73645/md_1dcb5160c97a11a7b3faa27e3a72c548.jpg', 
       category: categories[5], 
       brand: brands[11], 
-      price: 0.00,
-      size: '',
-      description: ''
+      price: 124.99,
+      size: 'Medium weight',
+      description: 'These stands utilize all professional features in a low-mass double-braced stand. Double braced tripod with cast height assembly and Gibraltars exclusive round rubber feet provide stability without a large profile.'
     },
     {
-      name: 'Stand 3', 
-      img: '', 
+      name: 'Gibraltar Medium Weight Double Braced Boom Cymbal Stand', 
+      img: 'https://cdn.long-mcquade.com/files/46998/md_4662b4670d93188e6baabb5e4bdb1dc4.jpg', 
       category: categories[5], 
       brand: brands[11], 
-      price: 0.00,
-      size: '',
-      description: ''
+      price: 119.99,
+      size: 'Medium weight',
+      description: 'Medium Weight Double braced Boom Cymbal Stand. These stands utilize all professional features in a low-mass double-braced stand. Double braced tripod with cast height assembly and Gibraltars exclusive round rubber feet provide stability without a large profile.'
+    },
+    {
+      name: 'Gibraltar Medium Weight Double Braced Straight Cymbal Stand', 
+      img: 'https://cdn.long-mcquade.com/files/186680/md_2ed89699344527607610cc04d22066a1.jpg', 
+      category: categories[5], 
+      brand: brands[11], 
+      price: 94.99,
+      size: 'Medium weight',
+      description: 'Medium weight straight cymbal stand. Great for the gigging drummer. Low mass, double-braced tripod for added stability. Hinged height adjustment with nylon collar inserts. Geared cymbal tilter.'
     },
     // Accessories
     {
-      name: 'Accessory 1', 
-      img: '', 
+      name: 'Vater Single-Pair Drum Stick Holder', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Single-Pair-Drum-Stick-Holder/443396000000000-00-220x220.jpg', 
       category: categories[6], 
-      brand: brands[2], 
-      price: 0.00,
-      size: '',
-      description: ''
+      brand: brands[8], 
+      price: 33.40,
+      size: 'N/A',
+      description: 'The Vater single-pair drumstick holder is equipped with a unique clamp-style fastening system that adjusts with an easy-to-turn knob. Infinite angle adjustments are possible and the stick holder stays put on your cymbal stand.'
     },
     {
-      name: 'Accessory 2', 
-      img: '', 
+      name: 'Vater Single-Pair Drum Stick Holder', 
+      img: 'https://media.guitarcenter.com/is/image/MMGS7/Multipair-Stick-Holder/443395000000000-00-220x220.jpg', 
       category: categories[6], 
-      brand: brands[2], 
-      price: 0.00,
-      size: '',
-      description: ''
+      brand: brands[8], 
+      price: 32.06,
+      size: 'N/A',
+      description: 'The Vater Multipair Drumstick Holder offers a unique clamp-style fastening system that adjusts with an easy-to-turn knob. Infinite angle adjustments are possible and the stick holder stays put on your cymbal stand. Holds 2-3 pairs of sticks.'
     },
     {
-      name: 'Accessory 3', 
-      img: '', 
+      name: 'Vic Firth Stick Caddy - Swivel Drum Stick Holder',
+      img: 'https://cdn.long-mcquade.com/files/15545/md_329568.jpg', 
+      category: categories[6], 
+      brand: brands[7], 
+      price: 27.99,
+      size: 'N/A',
+      description: 'Easy access to your sticks when you need them. Clamps to any stand or hardware.'
+    },
+    {
+      name: 'Vic Firth Marching Snare Stick Bag',
+      img: 'https://i.ebayimg.com/images/g/I7cAAOSwaapiAuwn/s-l1600.jpg', 
+      category: categories[6], 
+      brand: brands[7], 
+      price: 16.75,
+      size: 'N/A',
+      description: 'Attaches to marching snare drums with adjustable Velcro straps and holds a spare pair of sticks. Provides easy access during quick stick changes. Water resistant nylon.'
+    },
+    {
+      name: 'Promark SD200 Stick Depot', 
+      img: 'https://cdn.long-mcquade.com/files/73638/home_38b9bef555992b954dc1d069b8d7e352.jpg', 
       category: categories[6], 
       brand: brands[2], 
-      price: 0.00,
-      size: '',
-      description: ''
+      price: 21.75,
+      size: 'N/A',
+      description: 'The Promark SD200 stick depot holds two pairs of sticks and easily attaches to any cymbal stand.'
     },
   ]);
 

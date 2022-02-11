@@ -9,6 +9,7 @@ require('dotenv').config();
 // Make sure that dotenv is already required
 require('./config/database');
 
+
 const app = express();
 
 app.use(logger('dev'));
