@@ -96,7 +96,7 @@ const Item = require('./models/item');
       category: categories[0], 
       brand: brands[4], 
       price: 3000.00,
-      size: '24x14, 12x9, 16x16',
+      size: '24x14", 12x9", 16x16"',
       description: "Featuring 3-ply shells made individually using oversized plies of North American maple/poplar/maple, the reintroduced Gretsch Broadkaster calls upon a rich musical lineage of quality materials, craftsmanship and superstar alumni. The Broadkaster was the top-of-the-line kit for Gretsch in the 1930's boasting players a vertible who's who of big band and jazz drummers."
     },
     {

@@ -28,6 +28,7 @@ function OrderHistoryPage({ user }) {
       <Link className='grow' id='back-to-shopping' to="/"><i className="fa-regular fa-angle-left"></i> Back To Shopping</Link>
       </header>
       <h1 className='title'>{user.name}'s Order History </h1>
+      {orderItems.length ? 
     <main className="OrderHistoryPage">
     <aside>
     <OrderList 
@@ -39,6 +40,9 @@ function OrderHistoryPage({ user }) {
         order={activeOrder} 
     />
   </main>
+  :
+  <h3 className='order-msg'>No Orders Yet...</h3>
+  }
   </>
   );
 }
