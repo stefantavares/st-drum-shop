@@ -16,7 +16,7 @@ export default function MenuList({ menuItems, handleAddToOrder }) {
       {items}
       </>
       :
-      <h2 className='no-items-msg'>No Items To Show...</h2>
+      <h2 className='no-items-msg'>No Items Here Yet...</h2>
     }
     </main>
   );
