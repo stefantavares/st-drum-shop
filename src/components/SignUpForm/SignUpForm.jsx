@@ -46,7 +46,7 @@ class SignUpForm extends Component {
             <input type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
             <label>Password</label>
             <input type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
-            <label>Confirm</label>
+            <label>Password &nbsp;<span className='confirm'> (confirm)</span> </label>
             <input type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
             <div></div>
             <div className='submit-container'>
