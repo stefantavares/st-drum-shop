@@ -56,7 +56,7 @@
 
 ### **CLICK THE LINK TO USE THE APP!**
 
-- <a href="https://st-drum-shop.herokuapp.com/orders/new" target="_blank" rel="noreferrer noopener" >ST DRUM SHOP</a>
+- <a href="https://st-drum-shop.herokuapp.com" target="_blank" rel="noreferrer noopener" >ST DRUM SHOP</a>
 
 <br />
 <br />
