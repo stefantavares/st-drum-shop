@@ -1,70 +1,80 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **ST DRUM SHOP**
 
-## Available Scripts
+## **DESCRIPTION:**
+<br />
+ 
+ - **ST DRUM SHOP** is a e-commerce app designed to allow users to purchase drum products online.
 
-In the project directory, you can run:
+<br />
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **HOW TO USE:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+- Firstly, create an account to access the store.
+  <br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://i.imgur.com/kzhjvSq.png" height= 150px>
 
-### `npm run build`
+<br />
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Now you're ready to browse the store! Navigate through the products by using the categories and brands in the header. To see more details about a product, press the details button located on the product card.
+  <br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://i.imgur.com/2lr5axj.png" height= 350px>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
+<br />
 
-### `npm run eject`
+- Click the **"Add To Cart"** button to add the item to your shopping cart. (note: you can also add to cart from the main page if you want to purchase straight away!)
+  <br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="https://i.imgur.com/rUvct75.png" height= 350px>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Now that you have some items in your cart, you can add or reduce quantity by using the + and - buttons. Remove an item by reducing the quantity to 0. When your cart looks ready, press checkout to order.
+  <br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="https://i.imgur.com/u23qaL3.png" height= 350px>
 
-## Learn More
+<br />
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- When you checkout, you will be redirected to an order history page where you can review all your previous orders. You can access this page any time from the navigation buttons at the top of the page as well.
+  <br />
 
-### Code Splitting
+<img src="https://i.imgur.com/u23qaL3.png" height= 350px>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br />
+<br />
 
-### Analyzing the Bundle Size
+### **CLICK THE LINK TO USE THE APP!**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- <a href="https://st-drum-shop.herokuapp.com/orders/new" target="_blank" rel="noreferrer noopener" >ST DRUM SHOP</a>
 
-### Making a Progressive Web App
+<br />
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## **TECHNOLOGIES USED**
 
-### Advanced Configuration
+> - MongoDB
+> - Express
+> - React
+> - Node
+> - Html
+> - CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br />
 
-### Deployment
+### **NEXT STEPS:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Some planned future enhancements are:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> - Improved navigation interface, only showing the applicable brands to the parent category.
+> - Add product reviews.
