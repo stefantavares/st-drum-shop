@@ -49,7 +49,7 @@
 - When you checkout, you will be redirected to an order history page where you can review all your previous orders. You can access this page any time from the navigation buttons at the top of the page as well.
   <br />
 
-<img src="https://i.imgur.com/u23qaL3.png" height= 350px>
+<img src="https://i.imgur.com/DeaPQnw.png" height= 350px>
 
 <br />
 <br />
