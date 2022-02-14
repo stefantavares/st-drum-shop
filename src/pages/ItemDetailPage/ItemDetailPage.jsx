@@ -17,14 +17,13 @@ function ItemDetailPage() {
         const cart = await ordersAPI.addItemToCart(itemId);
         setCart(cart);
         navigate('/orders/new');
-      }
+    }
 
     async function getItem() {
         const itemOne = await itemsAPI.getById(itemName)
         console.log(itemOne);
         setItem(itemOne);
     }
-
 
     useEffect(function() {
         if(isMounted.current) {
