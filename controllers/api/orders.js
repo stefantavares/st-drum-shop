@@ -33,6 +33,6 @@ async function checkout(req, res) {
 }
 
 async function orders(req, res) {
-    const orders = await Order.getOrders(req.user._id);
-    res.json(orders);
-  }
+  const orders = await Order.getOrders(req.user._id);
+  res.json(orders);
+}

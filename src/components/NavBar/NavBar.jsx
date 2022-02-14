@@ -12,17 +12,17 @@ function NavBar({ user, setUser }) {
         <nav>
           <div className='links-container'>
             <div id='logo-container'>
-          <div className='logo'>ST DRUM SH<i className="fa-light fa-drum" id='logo-icon'></i>P</div>
+            <div className='logo'>ST DRUM SH<i className="fa-light fa-drum" id='logo-icon'></i>P</div>
           </div>
           <div>
           </div>
           <div className='navlink-container'>
-          <Link className='nav-orderhistory grow' to="/orders">Order History &nbsp;<i className="fa-regular fa-list"></i></Link>
-          <Link className="logout grow" to="" onClick={handleLogOut}>Log Out &nbsp;<i className="fa-regular fa-user"></i></Link>
+            <Link className='nav-orderhistory grow' to="/orders">Order History &nbsp;<i className="fa-regular fa-list"></i></Link>
+            <Link className="logout grow" to="" onClick={handleLogOut}>Log Out &nbsp;<i className="fa-regular fa-user"></i></Link>
           </div>
           </div>
           <div className='user-welcome-container'>
-        <p className='user-welcome'>Welcome <span id="nav-username">{user.name}</span></p>
+            <p className='user-welcome'>Welcome <span id="nav-username">{user.name}</span></p>
         </div>
         </nav>
       );

@@ -18,13 +18,13 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
         <div className="section-heading">
           {order.isPaid ?
             <>
-            <span>ORDER <span className="smaller">{order.orderId}</span></span>
-            <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span>
+              <span>ORDER <span className="smaller">{order.orderId}</span></span>
+              <span className='order-date'>{new Date(order.updatedAt).toLocaleDateString()}</span>
             </>
             :
             <div className='cart-header'>
-            <span>SHOPPING CART &nbsp;</span>
-            <div className='item-counter'>{order.totalQty}</div>
+              <span>SHOPPING CART &nbsp;</span>
+              <div className='item-counter'>{order.totalQty}</div>
             </div>
         }
         </div>
@@ -52,8 +52,6 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                       <span className="right" id='total-label'>TOTAL&nbsp;&nbsp;</span>
                     <span className="right">${order.orderTotal.toFixed(2)}</span>
                     </div>
-                
-
               </div>
             </>
             :
@@ -62,6 +60,6 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             </>
         }
       </div>
-        </div>
-    );
+    </div>
+  );
 }

@@ -14,23 +14,23 @@ function App() {
 
   return (
     <>
-    <main className="App">
-      { 
-        user ?
-        <>
-        <NavBar user={user} setUser={setUser}/>
-        <Routes>
-          <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
-          <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
-          <Route path="orders/new/items/:itemName" element={<ItemDetailPage user={user} setUser={setUser} />} />
-          <Route path="/*" element={<Navigate to="/orders/new" />} />
-        </Routes>
-        </>
-        :
-        <AuthPage setUser={setUser}/>
-      }
-    </main>
-      <Footer />
+      <main className="App">
+        { 
+          user ?
+          <>
+          <NavBar user={user} setUser={setUser}/>
+          <Routes>
+            <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
+            <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+            <Route path="orders/new/items/:itemName" element={<ItemDetailPage user={user} setUser={setUser} />} />
+            <Route path="/*" element={<Navigate to="/orders/new" />} />
+          </Routes>
+          </>
+          :
+          <AuthPage setUser={setUser}/>
+        }
+      </main>
+        <Footer />
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function MenuList({ menuItems, handleAddToOrder, user }) {
     <main className="MenuList">
       {items.length ? 
       <>
-      {items}
+        {items}
       </>
       :
       <h2 className='no-items-msg'>No Items Here Yet...</h2>

@@ -1,6 +1,6 @@
 import './BrandList.css';
 
-function BrandList({ menuItems, brands, activeBrand, setActiveBrand, activeCat }) {
+function BrandList({ brands, activeBrand, setActiveBrand }) {
     const brnds = brands.map(brand =>
       <li
         key={brand}

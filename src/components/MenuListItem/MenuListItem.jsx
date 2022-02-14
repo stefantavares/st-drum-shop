@@ -19,8 +19,8 @@ export default function MenuListItem({ menuItem, handleAddToOrder, user }) {
         <span>${menuItem.price.toFixed(2)}</span>
       {user ? 
         <button className="btn-sm grow" id="buy-button" onClick={() => handleAddToOrder(menuItem._id)}>
-        <i className="far fa-cart-plus"></i>
-        <span id="add-to-cart">ADD TO CART</span>
+          <i className="far fa-cart-plus"></i>
+          <span id="add-to-cart">ADD TO CART</span>
         </button>
         :
         <div></div>

@@ -56,7 +56,7 @@ class SignUpForm extends Component {
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
       </div>
-    )
+    );
   }
 }
 

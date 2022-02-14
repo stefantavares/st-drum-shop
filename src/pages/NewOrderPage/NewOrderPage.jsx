@@ -58,7 +58,7 @@ function NewOrderPage({ user, setUser }) {
   }, []);
 
   return (
-      <>
+    <>
       <header>
         <h5 id="category-title">SHOP CATEGORIES</h5>
         <div id="category-container">
@@ -75,7 +75,7 @@ function NewOrderPage({ user, setUser }) {
         />
         </div>
       </header>
-    <main className="NewOrderPage">
+      <main className="NewOrderPage">
 
       <MenuList
         menuItems={menuItems.filter(item => item.category.name === activeCat)
@@ -89,7 +89,7 @@ function NewOrderPage({ user, setUser }) {
       handleChangeQty={handleChangeQty}
       handleCheckout={handleCheckout}
       />
-    </main>
+      </main>
     </>
   );
 }
