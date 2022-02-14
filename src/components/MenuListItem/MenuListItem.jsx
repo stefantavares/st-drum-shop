@@ -6,7 +6,11 @@ export default function MenuListItem({ menuItem, handleAddToOrder, user }) {
     <div className="MenuListItem">
         <div className='img-details'>
             <img className='item-img grow' src={menuItem.img} alt="" />
+            {user ?
             <Link className='grow' id='details-button'to={`items/${menuItem._id}`}>DETAILS</Link>
+            :
+            <div></div>
+            }
         </div>
       <div className="name">
         {menuItem.name}
