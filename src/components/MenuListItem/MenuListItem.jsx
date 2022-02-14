@@ -1,7 +1,7 @@
 import './MenuListItem.css';
 import { Link } from 'react-router-dom';
 
-export default function MenuListItem({ menuItem, handleAddToOrder }) {
+export default function MenuListItem({ menuItem, handleAddToOrder, user }) {
   return (
     <div className="MenuListItem">
         <div className='img-details'>
@@ -13,10 +13,14 @@ export default function MenuListItem({ menuItem, handleAddToOrder }) {
       </div>
       <div className="buy">
         <span>${menuItem.price.toFixed(2)}</span>
+      {user ? 
         <button className="btn-sm grow" id="buy-button" onClick={() => handleAddToOrder(menuItem._id)}>
         <i className="far fa-cart-plus"></i>
         <span id="add-to-cart">ADD TO CART</span>
         </button>
+        :
+        <div></div>
+      }
       </div>
     </div>
   );

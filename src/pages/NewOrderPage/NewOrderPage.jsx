@@ -81,6 +81,7 @@ function NewOrderPage({ user, setUser }) {
         menuItems={menuItems.filter(item => item.category.name === activeCat)
           .filter(item =>item.brand.name === activeBrand)}
         handleAddToOrder={handleAddToOrder}
+        user={user}
       />
 
       <OrderDetail 

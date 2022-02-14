@@ -1,12 +1,13 @@
 import './MenuList.css';
 import MenuListItem from '../MenuListItem/MenuListItem';
 
-export default function MenuList({ menuItems, handleAddToOrder }) {
+export default function MenuList({ menuItems, handleAddToOrder, user }) {
   const items = menuItems.map(item =>
     <MenuListItem
       key={item._id}
       menuItem={item}
       handleAddToOrder={handleAddToOrder}
+      user={user}
     />
   );
   return (
